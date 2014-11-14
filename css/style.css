@@ -3,7 +3,7 @@ html, body {margin:0;padding:0;height:100%;}
 body {
 	background-color: black;
 	
-	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-family: 'futura_ltregular', Arial, Helvetica, Geneva, sans-serif;
 	color: #9aa6af;
 	text-rendering: optimizelegibility;
 	
@@ -37,13 +37,6 @@ a {text-decoration: none;}
 
 /* GENERAL STYLING */
 
-p {
-	text-align: center;
-	display:block;
-	color:white;
-	font-family: 'futura_ltregular';
-}
-
 .content {height:100%;}
 .responsive {height:100%;}
 
@@ -69,7 +62,7 @@ header {
 .burger li {
 	width: 25px;
 	height: 4px;
-	background-color: #B5B5B5;
+	background-color: white;
 	margin: 5px 0;
 }
 
@@ -112,6 +105,14 @@ nav li a {
 /* INTRO */
 
 
+.intro-wrapper {
+	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+	border-bottom: 100px solid white;
+}
+
 .intro {
   background-size: 1721px 900px;
   background-repeat: no-repeat;
@@ -123,19 +124,12 @@ nav li a {
 .intro .intro-icon-big {display: none;}
 
 .intro h1 {
-    font-family: "futura_ltregular";
-    line-height: 130%;
-    font-weight: 400;
+	line-height:46px;
     color: white;
     font-size: 40px;
-    margin: 0px;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 97px;
     padding-bottom: 25px;
-    width: 220px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
 }
 
 .intro span {color: #f58560;}
@@ -150,6 +144,7 @@ nav li a {
 }
 
 .intro img {
+	height:220px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -157,22 +152,32 @@ nav li a {
 }
 
 .intro h2 {
-    font-family: "futura_ltregular";
-    font-size: 16px;
+	font-size:17px;
+	line-height: 22px;
     letter-spacing: 1px;
-    font-weight: 400;
     color: white;
     text-align: center;
-    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto; 
 }
 
-.read-more {margin-top: 28px;text-align: center;}
+.read-more {
+	height:100px;
+	padding-top:31px;
+	text-align: center;
+}
 
-.read-more .arrow {margin-right: 20px;margin-bottom: 5px; }
-.read-more a {font-size: 26px;color: #52b3c2; }
+.read-more .arrow {
+	vertical-align: middle; 
+	padding-right:19px;
+}
+
+.read-more a {
+	font-size: 20px;
+	color: #52b3c2; 
+	vertical-align:middle;
+}
 
 
 
@@ -231,13 +236,12 @@ nav li a {
 header {
 	height: 60px;
 	z-index: 2;
-	background-color: #000;
-	border-bottom: solid 4px #985a28;
+	background-color: rgba(255, 111, 68, 0.69);
+	border-bottom: solid 4px white;
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
-	box-shadow: 0px -6px 35px #000;
 	
 		/* starting point */
 	-webkit-transform: translate3d(0,0,0);
@@ -253,8 +257,6 @@ header h1 {
 .burger {
 	display: block;
 	height: 22px;
-	border-radius: 5px;
-	border: 1px solid #737373;
 }
 
 
