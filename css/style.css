@@ -40,6 +40,18 @@ a {text-decoration: none;}
 .content {height:100%;}
 .responsive {height:100%;}
 
+p {color:white; text-align:center;}
+
+
+.title {
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	border-bottom: 2px solid;
+	display: table;
+	margin: 0 auto;
+	padding-bottom: 12px;
+}
 
 
 
@@ -86,6 +98,13 @@ nav li a {
 	display: block;
 }
 
+.home-icon {
+	float: right;
+	padding-top: 13px;
+	padding-right: 19px;
+}
+
+
 /* WEB NAV */
 
 
@@ -110,7 +129,7 @@ nav li a {
  	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 100%;
-	border-bottom: 100px solid white;
+	border-bottom: 75px solid white;
 }
 
 .intro {
@@ -128,15 +147,15 @@ nav li a {
     color: white;
     font-size: 40px;
     text-align: center;
-    padding-top: 97px;
-    padding-bottom: 25px;
+    padding-top: 90px;
+    padding-bottom: 16px;
 }
 
 .intro span {color: #f58560;}
 
 .intro .line {
     height: 2px;
-    width: 140px;
+    width: 130px;
     background-color: white;
     display: block;
     margin-left: auto;
@@ -144,7 +163,7 @@ nav li a {
 }
 
 .intro img {
-	height:220px;
+	height:182px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -160,17 +179,19 @@ nav li a {
     display: block;
     margin-left: auto;
     margin-right: auto; 
+    margin-top: 23px;
 }
 
 .read-more {
 	height:100px;
-	padding-top:31px;
+	padding-top:22px;
 	text-align: center;
 }
 
 .read-more .arrow {
+	height: 30px;
 	vertical-align: middle; 
-	padding-right:19px;
+	padding-right:16px;
 }
 
 .read-more a {
@@ -181,10 +202,55 @@ nav li a {
 
 
 
+/* GENERAL SECTION STYLING */
+
+.section {
+	padding: 40px 0px;
+}
 
 
+/* SERVICES */
+
+.services {
+	height:auto;
+	background-color: #52b3c2;
+}
+
+.services-icon {
+	height:191px;
+	display:block;
+	margin:0 auto;
+	padding: 33px 0px;
+}
+
+.section-title {
+	font-size: 20px;
+	letter-spacing: 2px;
+	padding-bottom: 26px;
+	font-family: 'futura_ltheavy';
+}
 
 
+.section-content {
+	letter-spacing: 1px;
+	line-height: 19px;
+	width: 86%;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 5px;
+}
+
+/* ABOUT */
+
+.about {
+	background-color: #ffbb63;
+}
+
+/* CONTACT */
+
+.contact {
+	background-color: #f57467;
+}
 
 
 @media only screen and (min-width: 500px) {
@@ -236,8 +302,9 @@ nav li a {
 header {
 	height: 60px;
 	z-index: 2;
-	background-color: rgba(255, 111, 68, 0.69);
-	border-bottom: solid 4px white;
+	/*background:none; */
+	background-color: rgba(255, 139, 68, 1);
+	border-bottom: solid 4px white; 
 	position: fixed;
 	top: 0;
 	right: 0;
