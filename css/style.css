@@ -82,7 +82,6 @@ header {
 
 nav {
 	position: relative;
-	height: 150px;
 	margin: 0 auto;
 }
 nav li {
@@ -124,28 +123,21 @@ nav li a {
 /* INTRO */
 
 
-.intro-wrapper {
-	-webkit-box-sizing: border-box;
- 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	height: 100%;
-	border-bottom: 75px solid white;
-}
-
 .intro {
   background-size: 1721px 900px;
   background-repeat: no-repeat;
   background-color: #ffbb63;
   height: auto;
-  height: 100%; 
+  padding: 10px 0px 44px 0px;
 }
 
 .intro .intro-icon-big {display: none;}
 
 .intro h1 {
 	line-height:46px;
+	letter-spacing: 1px;
     color: white;
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
     padding-top: 90px;
     padding-bottom: 16px;
@@ -163,7 +155,7 @@ nav li a {
 }
 
 .intro img {
-	height:182px;
+	height:160px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -171,7 +163,7 @@ nav li a {
 }
 
 .intro h2 {
-	font-size:17px;
+	font-size:18px;
 	line-height: 22px;
     letter-spacing: 1px;
     color: white;
@@ -251,6 +243,72 @@ nav li a {
 .contact {
 	background-color: #f57467;
 }
+
+.contact-wrapper {
+	width:90%;
+	max-width: 650px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+label {
+	color:white;
+	font-size:15px;
+	display:block;
+	margin-top:20px;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+input, textarea {
+	-webkit-appearance: none;
+	border-radius: 0;
+	width: 100%;
+	height: 19px;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 0;
+	padding-bottom: 13px;
+	margin-top: 14px;
+	font-size: 14px;
+	color: #3a3a3a;
+	background-color:#ffbb63;
+}
+
+input:focus, textarea:focus {
+	background-color: white;
+	outline:0;
+}
+
+#submit {
+	font-family:'futura_ltheavy';
+	font-size:16px;
+	color:white;
+	height:49px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding-bottom:10px;
+    margin-top: 27px;
+}
+
+#submit:hover {
+	background-color: white;
+	cursor:pointer;
+	color:#f57467;
+}
+
+#submit:active {
+	opacity:0.8;
+}
+
+
 
 
 @media only screen and (min-width: 500px) {
