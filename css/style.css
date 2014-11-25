@@ -133,20 +133,20 @@ nav li a {
 .intro .intro-icon-big {display: none;}
 
 .intro h1 {
-	line-height:46px;
+	line-height:44px;
 	letter-spacing: 1px;
     color: white;
     font-size: 38px;
     text-align: center;
-    padding-top: 90px;
-    padding-bottom: 16px;
+    padding-top: 49px;
+    padding-bottom: 19px;
 }
 
 .intro span {color: #f58560;}
 
 .intro .line {
     height: 2px;
-    width: 130px;
+    width: 75px;
     background-color: white;
     display: block;
     margin-left: auto;
@@ -154,23 +154,23 @@ nav li a {
 }
 
 .intro img {
-	height:160px;
+	height:178px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px; 
+    margin-top: 28px; 
 }
 
 .intro h2 {
 	font-size:18px;
 	line-height: 22px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: white;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto; 
-    margin-top: 23px;
+    margin-top: 32px;
 }
 
 .read-more {
@@ -208,7 +208,7 @@ nav li a {
 }
 
 .services-icon {
-	height:191px;
+	height:190px;
 	display:block;
 	margin:0 auto;
 	padding: 33px 0px;
@@ -359,9 +359,9 @@ input:focus, textarea:focus {
 header {
 	height: 60px;
 	z-index: 2;
-	/*background:none; */
-	background-color: rgba(255, 139, 68, 1);
-	border-bottom: solid 4px white; 
+	background:none;
+	/* background-color: rgba(255, 139, 68, 1);
+	border-bottom: solid 4px white; */
 	position: fixed;
 	top: 0;
 	right: 0;
