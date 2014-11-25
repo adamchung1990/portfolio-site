@@ -47,12 +47,57 @@ p {color:white; text-align:center;}
 	font-size: 40px;
 	color: white;
 	text-align: center;
-	border-bottom: 2px solid;
 	display: table;
 	margin: 0 auto;
 	padding-bottom: 12px;
 }
 
+.line-animate {
+	height:2px;
+	width:100px;
+	background-color: white;
+	display:block;
+	margin:0 auto;
+
+    animation: line-animate 2s;
+    -moz-animation: line-animate 2s; /* Firefox */
+    -webkit-animation: line-animate 1s; /* Safari and Chrome */
+    -o-animation: line-animate 2s; /* Opera */
+
+
+}
+@keyframes line-animate {
+    from {
+        width:0px;
+    }
+    to {
+        width:100px;
+    }
+}
+@-moz-keyframes line-animate { /* Firefox */
+    from {
+        width:0px;
+    }
+    to {
+        width:100px;
+    }
+}
+@-webkit-keyframes line-animate { /* Safari and Chrome */
+    from {
+        width:0px;
+    }
+    to {
+        width:100px;
+    }
+}
+@-o-keyframes line-animate { /* Opera */
+    from {
+        width:0px;
+    }
+    to {
+        width:100px;
+    }
+}
 
 
 /* MOBILE NAV */
@@ -98,6 +143,7 @@ nav li a {
 }
 
 .home-icon {
+	height:37px;
 	float: right;
 	padding-top: 13px;
 	padding-right: 19px;
@@ -153,13 +199,95 @@ nav li a {
     margin-right: auto; 
 }
 
+.icon-circle {
+	height:180px;
+	width:180px;
+	display:block;
+	margin:0 auto;
+	background-color:#7ac2c5;
+	border-radius:100%;
+	border:6px solid white;
+	margin-top:30px;
+}
+
+
+.fadein {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 .intro img {
-	height:178px;
+	height:120px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 28px; 
+    margin-top: 30px; 
 }
+
+.shadow {
+	height:10px;
+	border-radius:100%;
+	background-color: rgba(0, 0, 0, 0.12);
+	display:block;
+	margin:0 auto;
+	margin-top:5px;
+
+	-webkit-animation:shadow 1.3s infinite;
+}
+
+@-webkit-keyframes shadow {
+  0%       {width:73px; }
+  60%      {width:55px; }
+  100%     {width:73px;}
+}
+
+
+.bounce {
+  position:relative;
+  -webkit-animation:bounce 1.3s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       {bottom:0px; }
+  60%      {bottom:10px; }
+  100%     {bottom:0px;}
+}
+
 
 .intro h2 {
 	font-size:18px;
