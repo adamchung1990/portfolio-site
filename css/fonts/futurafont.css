@@ -10,7 +10,7 @@
          url('futuralt-heavy-webfont.woff') format('woff'),
          url('futuralt-heavy-webfont.ttf') format('truetype'),
          url('futuralt-heavy-webfont.svg#futura_ltheavy') format('svg');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 
 }
@@ -26,7 +26,7 @@
          url('futuralt-condensed-webfont.woff') format('woff'),
          url('futuralt-condensed-webfont.ttf') format('truetype'),
          url('futuralt-condensed-webfont.svg#futura_ltcondensed') format('svg');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 
 }
@@ -42,7 +42,7 @@
          url('futuralt-extrabold-webfont.woff') format('woff'),
          url('futuralt-extrabold-webfont.ttf') format('truetype'),
          url('futuralt-extrabold-webfont.svg#futura_ltextrabold') format('svg');
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
 
 }
@@ -58,7 +58,7 @@
          url('futuralt-webfont.woff') format('woff'),
          url('futuralt-webfont.ttf') format('truetype'),
          url('futuralt-webfont.svg#futura_ltregular') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 
 }

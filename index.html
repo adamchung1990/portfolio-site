@@ -12,10 +12,9 @@
 
 <!-- Style Sheets --> 
 <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" href="css/fonts/futurafont.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-
-<!-- CUSTOM FONTS -->
-    <link rel="stylesheet" href="css/fonts/futurafont.css" type="text/css" charset="utf-8" />
+    
 
 <!-- Scripts --> 
 <script type="text/javascript">
@@ -38,14 +37,18 @@
 <!-- navigation -->
 
 	<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<div id="nav-background">
+			<img class="home-icon" src="img/home-icon.png" />
+		</div>
 		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
 			<li></li><li></li><li></li>
 		</ul>
 		<img class="home-icon" src="img/home-icon.png" />
+
 	</header>
 
 
-		<div id="nav-background"></div>
+		
 		<nav class="slide">
 			<ul>
 				<li><a class="current" href="#nav-background">DESIGN</a></li>
@@ -63,19 +66,31 @@
 			<!--INTRO -->
 			<li class="intro-wrapper">
 			    <div class="intro" >
-			    <div class="intro-message-container" >
-			        <img class="intro-icon-big" src="img/design.png" />
 
-			        <div class="intro-text">
-			            <h1 class="fadein">friendly<br/><span>ghost</span> studio</h1>
-			            <div class="line-animate"></div>
-			            	<div class="icon-circle">
+			    	<div id="intro-mobile">
+		            	<h1 class="fadein">friendly<br/><span>ghost</span> studio</h1>
+		            	<div class="line-animate"></div>
+		            	<div class="icon-circle">
 			            	<img class="bounce" src="img/design1.png" />
 			            	<div class="shadow"></div>
-			            	</div>
-			            <h2>Boo! <span>Hi, I’m </span>Adam Chung! <br/><span>I’m an</span> illustrator <span>and</span> designer.</h2>
-			        </div>
-			    </div>
+		            	</div>
+		            	<h2>Boo! <span>Hi, I’m </span>Adam Chung! <br/><span>I’m an</span> illustrator <span>and</span> designer.</h2>
+		            </div>
+
+		            <div id="intro-web">
+		            	<div class="icon-circle">
+			            	<img class="bounce" src="img/design1.png" />
+			            	<div class="shadow"></div>
+		            	</div>
+		            	<div id="intro-web-message">
+			            	<h1 class="fadein">friendly<br/><span>ghost</span> studio</h1>
+			            	<div class="line-animate"></div>
+			            	<h2>Boo! <span>Hi, I’m </span>Adam Chung! <br/><span>I’m an</span> illustrator <span>and</span> designer.</h2>
+		            	</div>
+		            </div>
+
+		            
+
 			    </div>
 
 			</li>
@@ -171,20 +186,20 @@
 	    $(document).ready(function(){
 	 
 	        $(window).scroll(function(){
-	            if ($(this).scrollTop() > 400) {
-	                $('#nav-background').fadeIn(600);
+	            if ($(this).scrollTop() > 60) {
+	                $('#nav-background').fadeIn(300);
 	            } else {
-	                $('#nav-background').fadeOut(600);
+	                $('#nav-background').fadeOut(300);
 	            }
 	        });
 
-	        $(window).scroll(function(){
-	            if ($(this).scrollTop() < 320) {
-	                $('.bounce').fadeIn(600);
-	            } else {
-	                $('.bounce').fadeOut(600);
-	            }
-	        });
+	        //$(window).scroll(function(){
+	            //if ($(this).scrollTop() < 320) {
+	                //$('.bounce').fadeIn(600);
+	            //} else {
+	                //$('.bounce').fadeOut(600);
+	            //}
+	        //});
 	 
 	    });
 	})(jQuery);

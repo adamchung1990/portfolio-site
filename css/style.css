@@ -47,7 +47,6 @@ p {color:white; text-align:center;}
 	font-size: 40px;
 	color: white;
 	text-align: center;
-	display: table;
 	margin: 0 auto;
 	padding-bottom: 12px;
 }
@@ -64,40 +63,39 @@ p {color:white; text-align:center;}
     -webkit-animation: line-animate 1s; /* Safari and Chrome */
     -o-animation: line-animate 2s; /* Opera */
 
-
 }
-@keyframes line-animate {
-    from {
-        width:0px;
-    }
-    to {
-        width:100px;
-    }
-}
-@-moz-keyframes line-animate { /* Firefox */
-    from {
-        width:0px;
-    }
-    to {
-        width:100px;
-    }
-}
-@-webkit-keyframes line-animate { /* Safari and Chrome */
-    from {
-        width:0px;
-    }
-    to {
-        width:100px;
-    }
-}
-@-o-keyframes line-animate { /* Opera */
-    from {
-        width:0px;
-    }
-    to {
-        width:100px;
-    }
-}
+	@keyframes line-animate {
+	    from {
+	        width:0px;
+	    }
+	    to {
+	        width:100px;
+	    }
+	}
+	@-moz-keyframes line-animate { /* Firefox */
+	    from {
+	        width:0px;
+	    }
+	    to {
+	        width:100px;
+	    }
+	}
+	@-webkit-keyframes line-animate { /* Safari and Chrome */
+	    from {
+	        width:0px;
+	    }
+	    to {
+	        width:100px;
+	    }
+	}
+	@-o-keyframes line-animate { /* Opera */
+	    from {
+	        width:0px;
+	    }
+	    to {
+	        width:100px;
+	    }
+	}
 
 
 /* MOBILE NAV */
@@ -126,8 +124,9 @@ header {
 .burger.open li {background-color: #d9dde1;}
 
 nav {
-	position: relative;
+	position: fixed;
 	margin: 0 auto;
+	z-index:1;
 }
 nav li {
 	float: left;
@@ -145,7 +144,7 @@ nav li a {
 .home-icon {
 	height:37px;
 	float: right;
-	padding-top: 13px;
+	padding-top: 12px;
 	padding-right: 19px;
 }
 
@@ -155,12 +154,12 @@ nav li a {
 
 
 #nav-background {
-	height:79px;
-	width:100%;
-	background-color: black;
-	border-bottom: solid 4px #985a28;
-	box-shadow: 0px -4px 42px #000;
-	position:fixed;
+	height: 60px;
+	width: 100%;
+	background-color: rgba(255, 139, 68, 1);
+	border-bottom: solid 4px white;
+	box-shadow: 0px -4px 42px rgba(0, 0, 0, 0.21);
+	position: fixed;
 	display:none;
 }
 
@@ -179,13 +178,13 @@ nav li a {
 .intro .intro-icon-big {display: none;}
 
 .intro h1 {
-	line-height:44px;
-	letter-spacing: 1px;
-    color: white;
-    font-size: 38px;
-    text-align: center;
-    padding-top: 49px;
-    padding-bottom: 19px;
+	line-height: 49px;
+	letter-spacing: 0.5px;
+	color: white;
+	font-size: 42px;
+	text-align: center;
+	padding-top: 58px;
+	padding-bottom: 24px;
 }
 
 .intro span {color: #f58560;}
@@ -257,6 +256,10 @@ nav li a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px; 
+}
+
+#intro-web {
+	display:none;
 }
 
 .shadow {
@@ -438,31 +441,77 @@ input:focus, textarea:focus {
 
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
+	#intro-mobile {display:none;}
 
 
+	.icon-circle {
+		margin-left: 0px;
+		display: inline-block;
+		margin-right: 41px;
+		vertical-align: middle;
+	}
+
+	#intro-web {
+		display:block;
+		margin:0 auto;
+		width:550px;
+	}
+
+	#intro-web-message {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	#intro-web-message .line-animate {
+		margin-left:0px;
+	}
+
+	#intro-web-message h1 {
+		text-align:left;
+	}
+
+	#intro-web-message h2 {
+		text-align:left;
+	}
+
+	li a:hover {
+		-webkit-transform: translate(0, -3px);
+		transform: translate(0, -3px);
+
+	}
 }
 
 
 
 @media only screen and (min-width: 780px) {
 
+	nav li {
+		-webkit-transition-duration: 0.2s;
+		transition-duration: 0.2s;
+		-webkit-transition-delay: 0s;
+		transition-delay: 0s;
+		-webkit-animation-name: fadeindown;
+		animation-name: fadeindown;
+	}
+
+	nav li:hover {
+		box-shadow: inset 0 -3px white;
+	}
 
 	nav li a {
 		font-size:16px; 
 		margin:7px 7px;
 		padding-bottom:9px;
-		border-bottom: 3px solid transparent;
+		
+		-webkit-transition-duration: 0.2s;
+		transition-duration: 0.2s;
+		-webkit-transition-delay: 0s;
+		transition-delay: 0s;
 
-  		-o-transition: border-color .5s ease-in-out;
-		-ms-transition: border-color .5s ease-in-out;
-		-moz-transition: border-color .5s ease-in-out;
-		-webkit-transition: border-color .5s ease-in-out;
-		transition: border-color .5s ease-in-out;
 	}
 
-	a:hover {border-bottom-color: white;}
-	a.current {border-bottom-color: white;}
+
 
 	
 }
@@ -485,11 +534,7 @@ input:focus, textarea:focus {
 
 
 header {
-	height: 60px;
 	z-index: 2;
-	background:none;
-	/* background-color: rgba(255, 139, 68, 1);
-	border-bottom: solid 4px white; */
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -556,6 +601,7 @@ nav {
 	margin: 0;
 	background-color: #171717;
 	border-radius: 8px;
+	z-index:0;
 	
 	/* starting point */
 	opacity: .3;
