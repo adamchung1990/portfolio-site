@@ -270,7 +270,7 @@ nav li a {
 	margin:0 auto;
 	margin-top:5px;
 
-	-webkit-animation:shadow 1.3s infinite;
+	-webkit-animation:shadow 1s infinite;
 }
 
 @-webkit-keyframes shadow {
@@ -282,7 +282,7 @@ nav li a {
 
 .bounce {
   position:relative;
-  -webkit-animation:bounce 1.3s infinite;
+  -webkit-animation:bounce 1s infinite;
 }
 
 @-webkit-keyframes bounce {
@@ -362,6 +362,24 @@ nav li a {
 	padding-bottom: 5px;
 }
 
+.skills {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	width: 80%;
+	display: block;
+	margin: 39px auto 7px;
+	padding: 24px 0px;
+}
+
+#skills-title {
+	display: table;
+	border-bottom: 2px solid white;
+	margin: 0 auto 23px;
+	padding-bottom: 8px;
+}
+
+#skills-content {width:100%;}
+
 /* ABOUT */
 
 .about {
@@ -439,6 +457,20 @@ input:focus, textarea:focus {
 }
 
 
+
+/* FOOTER */
+.footer {
+	border-top: 1px solid white;
+	width: 90%;
+	display: block;
+	margin: 53px auto 0px;
+	padding-top: 10px;
+	
+}
+
+.footer p{
+	text-align: right;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -535,7 +567,6 @@ input:focus, textarea:focus {
 
 header {
 	z-index: 2;
-	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
