@@ -215,20 +215,6 @@ nav li a {
 
 
 
-
-
-.intro img {
-	height:120px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px; 
-}
-
-#intro-web {
-	display:none;
-}
-
 .shadow {
 	height:10px;
 	border-radius:100%;
@@ -241,11 +227,19 @@ nav li a {
 }
 
 
-.bounce {
-  position:relative;
-  -webkit-animation:bounce 1s infinite;
+.ghost {
+	height:120px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px; 
+  	position:relative;
+  	-webkit-animation:bounce 1s infinite;
 }
 
+#intro-web {
+	display:none;
+}
 
 .intro h2 {
 	font-size:18px;
@@ -308,6 +302,46 @@ nav li a {
 	margin:0 auto;
 	padding: 33px 0px;
 }
+
+.services .icon-circle {margin: 32px auto 32px;}
+
+#illustration {background-color: #f08f6a;}
+
+#development {background-color: #eca671;}
+
+#development .ghost {height:124px;margin-top:27px;}
+
+#illustration .ghost {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+#illustration .shadow {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+#design .ghost {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+
+#design .shadow {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+
+#development .ghost {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+
+#development .shadow {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+
+
 
 .section-title {
 	font-size: 20px;

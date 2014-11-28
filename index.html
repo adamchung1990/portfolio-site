@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 
-
+<link rel="stylesheet" href="css/animate.css">
 
 <!-- Scripts --> 
 <script type="text/javascript">
@@ -30,6 +30,7 @@
 															"type='text/javascript'%3E%3C/script%3E"))
 </script>
 <script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
 <![endif]-->
@@ -78,7 +79,7 @@
 
 		            	</h1>
 		            	<div class="icon-circle">
-			            	<img class="bounce" src="img/design1.png" />
+			            	<img class="ghost" src="img/design.png" />
 			            	<div class="shadow"></div>
 		            	</div>
 		            	<h2>Boo! <span id="highlight">Hi, I’m </span>Adam Chung! <br/><span id="highlight">I’m an</span> illustrator <span id="highlight">and</span> designer.</h2>
@@ -86,7 +87,7 @@
 
 		            <div id="intro-web">
 		            	<div class="icon-circle">
-			            	<img class="bounce" src="img/design1.png" />
+			            	<img class="ghost" src="img/design.png" />
 			            	<div class="shadow"></div>
 		            	</div>
 		            	<div id="intro-web-message">
@@ -108,16 +109,25 @@
 				<p class="title">services</p>
 				<div class="line-animate"></div>
 
-				<img class="services-icon" src="img/illustration.png" />
+				<div class="wow fadeindown2 icon-circle" data-wow-offset="10" id="illustration">
+			        <img class="ghost" src="img/illustration.png" />
+			        <div class="shadow"></div>
+		        </div>
 				<p class="section-title">ILLUSTRATION</p>
 				<p class="section-content">I have years of experience illustrating for various projects, ranging from books to magazines. I have a passion for quirky characters and expressions.</p>
 
 
-				<img class="services-icon" src="img/design.png" />
+				<div class="wow fadeindown2 icon-circle" id="design">
+			        <img class="ghost" src="img/design.png" />
+			        <div class="shadow"></div>
+		        </div>
 				<p class="section-title">DESIGN</p>
 				<p class="section-content">I have experience designing for both print and web. For web, I have experience making responsive designs and UX design. </p>
 
-				<img class="services-icon" src="img/development.png" />
+				<div class="wow fadeindown2 icon-circle" id="development">
+			        <img class="ghost" src="img/development3.png" />
+			        <div class="shadow"></div>
+		        </div>
 				<p class="section-title">DEVELOPMENT</p>
 				<p class="section-content">I use the latest HTML, CSS, and Javascript techniques to make beautiful, responsive sites. </p>
 
@@ -196,30 +206,9 @@
 		});
 	</script>
 
-	<script type="text/javascript">
- 
-	(function($) {
-	    $(document).ready(function(){
-	 
-	        $(window).scroll(function(){
-	            if ($(this).scrollTop() > 60) {
-	                $('#nav-background').fadeIn(300);
-	            } else {
-	                $('#nav-background').fadeOut(300);
-	            }
-	        });
-
-	        //$(window).scroll(function(){
-	            //if ($(this).scrollTop() < 320) {
-	                //$('.bounce').fadeIn(600);
-	            //} else {
-	                //$('.bounce').fadeOut(600);
-	            //}
-	        //});
-	 
-	    });
-	})(jQuery);
-	 
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
 	</script>
 
 	<script type="text/javascript">
