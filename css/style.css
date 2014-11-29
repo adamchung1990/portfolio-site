@@ -52,23 +52,12 @@ p {color:white; text-align:center;}
 	padding-bottom: 12px;
 }
 
-.line-animate {
+.line {
 	height:2px;
 	width:100px;
 	background-color: white;
 	display:block;
 	margin:0 auto;
-
-	-webkit-animation-fill-mode: backwards;
-	animation-fill-mode: backwards;
-
-	-webkit-animation-duration: 0.8s;
-	animation-duration: 0.8s;
-	-webkit-animation-delay: 0.3s;
-	animation-delay: 0.3s;
-	-webkit-animation-name: line-animate;
-	animation-name: line-animate;
-
 }
 	
 
@@ -99,8 +88,8 @@ header {
 .burger.open li {background-color: #d9dde1;}
 
 nav {
-	position: fixed;
-	margin: 0 auto;
+	float: right;
+	margin: 19px 31px 0 0;
 	z-index:1;
 }
 nav li {
@@ -482,7 +471,7 @@ input:focus, textarea:focus {
 	}
 
 	#intro-web {
-		padding: 78px 0 30px 51px;
+		padding: 136px 0 81px 20px;
 		display:block;
 		margin:0 auto;
 		width:550px;
@@ -493,11 +482,13 @@ input:focus, textarea:focus {
 		vertical-align: middle;
 	}
 
-	#intro-web-message .line-animate {
+	#intro-web-message .line {
 		margin-left:0px;
 	}
 
 	#intro-web-message h1 {
+		line-height: 68px;
+		font-size: 55px;
 		text-align:left;
 		padding-top:0px;
 	}
@@ -518,6 +509,7 @@ input:focus, textarea:focus {
 @media only screen and (min-width: 780px) {
 
 	nav li {
+		margin-left: 21px;
 		-webkit-transition-duration: 0.2s;
 		transition-duration: 0.2s;
 		-webkit-transition-delay: 0s;
@@ -531,9 +523,9 @@ input:focus, textarea:focus {
 	}
 
 	nav li a {
+		letter-spacing: 1.5px;
 		font-size:16px; 
-		margin:7px 7px;
-		padding-bottom:9px;
+		height: 30px;
 		
 		-webkit-transition-duration: 0.2s;
 		transition-duration: 0.2s;
@@ -543,7 +535,10 @@ input:focus, textarea:focus {
 	}
 
 
-
+	.home-icon {
+		float: left;
+		margin: 15px 0 0 25px;
+	}
 	
 }
 
@@ -862,38 +857,7 @@ header.close,
 }
 
 
-@keyframes line-animate {
-	    from {
-	        width:0px;
-	    }
-	    to {
-	        width:100px;
-	    }
-	}
-	@-moz-keyframes line-animate { /* Firefox */
-	    from {
-	        width:0px;
-	    }
-	    to {
-	        width:100px;
-	    }
-	}
-	@-webkit-keyframes line-animate { /* Safari and Chrome */
-	    from {
-	        width:0px;
-	    }
-	    to {
-	        width:100px;
-	    }
-	}
-	@-o-keyframes line-animate { /* Opera */
-	    from {
-	        width:0px;
-	    }
-	    to {
-	        width:100px;
-	    }
-	}
+
 
 
 @-webkit-keyframes shadow {
