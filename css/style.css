@@ -45,11 +45,11 @@ p {color:white; text-align:center;}
 
 
 .title {
-	font-size: 40px;
+	font-size: 2.5rem;
 	color: white;
 	text-align: center;
 	margin: 0 auto;
-	padding-bottom: 12px;
+	padding-bottom: .75rem;
 }
 
 .line {
@@ -89,7 +89,7 @@ header {
 
 nav {
 	float: right;
-	margin: 19px 31px 0 0;
+	margin: 25px 30px 0 0;
 	z-index:1;
 }
 nav li {
@@ -100,7 +100,7 @@ nav li {
 nav li a {
 	font-family:'futura_ltregular', sans-serif;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 1.125rem;
 	color: white;
 	display: block;
 }
@@ -132,20 +132,22 @@ nav li a {
 /* INTRO */
 
 .intro {
-  background-color: #ffbb63;
-  padding: 10px 0px 44px 0px;
+	background-color: #ffbb63;
+	padding: .625rem 0 2.75rem 0;
+	transition: .4s;
+	transition-delay: .3s;
 }
 
 .intro .intro-icon-big {display: none;}
 
 .intro h1 {
-	line-height: 53px;
+	line-height: 3.3rem;
 	letter-spacing: 0.5px;
 	color: white;
-	font-size: 46px;
+	font-size: 2.875em;
 	text-align: center;
-	padding-top: 66px;
-	padding-bottom: 30px;
+	padding-top: 4.1rem;
+	padding-bottom: 1.9rem;
 }
 
 .intro h1 span:nth-of-type(1){
@@ -231,15 +233,15 @@ nav li a {
 }
 
 .intro h2 {
-	font-size:18px;
-	line-height: 22px;
+	font-size:1.125em;
+	line-height: 1.375rem;
     letter-spacing: 0.5px;
     color: white;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto; 
-    margin-top: 32px;
+    margin-top: 2rem;
 
     -webkit-animation-fill-mode: backwards;
 	animation-fill-mode: backwards;
@@ -251,30 +253,12 @@ nav li a {
 	animation-name: fadeinup;
 }
 
-.read-more {
-	height:100px;
-	padding-top:22px;
-	text-align: center;
-}
-
-.read-more .arrow {
-	height: 30px;
-	vertical-align: middle; 
-	padding-right:16px;
-}
-
-.read-more a {
-	font-size: 20px;
-	color: #52b3c2; 
-	vertical-align:middle;
-}
-
 
 
 /* GENERAL SECTION STYLING */
 
 .section {
-	padding: 40px 0px;
+	padding: 2.5rem 0;
 }
 
 
@@ -289,10 +273,10 @@ nav li a {
 	height:190px;
 	display:block;
 	margin:0 auto;
-	padding: 33px 0px;
+	padding: 2rem 0;
 }
 
-.services .icon-circle {margin: 32px auto 32px;}
+.services .icon-circle {margin: 2rem auto 2rem;}
 
 #illustration {background-color: #f08f6a;}
 
@@ -333,9 +317,9 @@ nav li a {
 
 
 .section-title {
-	font-size: 20px;
+	font-size: 1.25rem;
 	letter-spacing: 2px;
-	padding-bottom: 26px;
+	padding-bottom: 1.625rem;
 	font-family: 'futura_ltheavy';
 }
 
@@ -346,7 +330,7 @@ nav li a {
 	width: 86%;
 	display: block;
 	margin: 0 auto;
-	padding-bottom: 5px;
+	padding-bottom: .3rem;
 }
 
 .skills {
@@ -361,8 +345,8 @@ nav li a {
 #skills-title {
 	display: table;
 	border-bottom: 2px solid white;
-	margin: 0 auto 23px;
-	padding-bottom: 8px;
+	margin: 0 auto 1.375rem;
+	padding-bottom: .5rem;
 }
 
 #skills-content {width:100%;}
@@ -384,15 +368,14 @@ nav li a {
 	max-width: 650px;
 	display: block;
 	margin: 0 auto;
-	padding-bottom: 20px;
+	padding-bottom: 1.25rem;
 }
 
 label {
 	color:white;
-	font-size:15px;
 	display:block;
 	margin-top:20px;
-	font-size: 20px;
+	font-size: 1.25rem;
 	letter-spacing: 1px;
 }
 
@@ -403,10 +386,9 @@ input, textarea {
 	height: 19px;
 	border: none;
 	border-radius: 5px;
-	padding: 10px 0;
-	padding-bottom: 13px;
-	margin-top: 14px;
-	font-size: 14px;
+	padding: .625rem 0 .75rem;
+	margin-top: .875rem;
+	font-size: .875rem;
 	color: #3a3a3a;
 	background-color:#ffbb63;
 }
@@ -418,7 +400,7 @@ input:focus, textarea:focus {
 
 #submit {
 	font-family:'futura_ltheavy';
-	font-size:16px;
+	font-size:1rem;
 	color:white;
 	height:49px;
 	width: 100%;
@@ -429,8 +411,8 @@ input:focus, textarea:focus {
     border-radius:5px;
     background-color: transparent;
     border: 2px solid white;
-    padding-bottom:10px;
-    margin-top: 27px;
+    padding-bottom:.625rem;
+    margin-top: 1.625rem;
 }
 
 #submit:hover {
@@ -450,8 +432,8 @@ input:focus, textarea:focus {
 	border-top: 1px solid white;
 	width: 90%;
 	display: block;
-	margin: 53px auto 0px;
-	padding-top: 10px;
+	margin: 3.25rem auto 0px;
+	padding-top: .625rem;
 	
 }
 
@@ -465,16 +447,16 @@ input:focus, textarea:focus {
 
 
 	.icon-circle {
-		margin-right: 41px;
+		margin-right: 2.5rem;
 		display: inline-block;
 		vertical-align: middle;
 	}
 
 	#intro-web {
-		padding: 136px 0 81px 20px;
+		padding: 8.5rem 0 5rem 1rem;
 		display:block;
 		margin:0 auto;
-		width:550px;
+		width:34.5rem;
 	}
 
 	#intro-web-message {
@@ -487,8 +469,8 @@ input:focus, textarea:focus {
 	}
 
 	#intro-web-message h1 {
-		line-height: 68px;
-		font-size: 55px;
+		line-height: 4.25rem;
+		font-size: 3.375em;
 		text-align:left;
 		padding-top:0px;
 	}
@@ -509,13 +491,34 @@ input:focus, textarea:focus {
 @media only screen and (min-width: 780px) {
 
 	nav li {
-		margin-left: 21px;
-		-webkit-transition-duration: 0.2s;
-		transition-duration: 0.2s;
-		-webkit-transition-delay: 0s;
-		transition-delay: 0s;
+		margin-left: 30px;
 		-webkit-animation-name: fadeindown;
 		animation-name: fadeindown;
+	}
+
+	nav li:nth-of-type(1) {
+		-webkit-animation-duration: 0.55s;
+		animation-duration: 0.55s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+
+	nav li:nth-of-type(2) {
+		-webkit-animation-duration: 0.65s;
+		animation-duration: 0.65s;
+		-webkit-animation-delay: .05s;
+		animation-delay: .05s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+
+	nav li:nth-of-type(3) {
+		-webkit-animation-duration: 0.75s;
+		animation-duration: 0.75s;
+		-webkit-animation-delay: .1s;
+		animation-delay: .1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
 	}
 
 	nav li:hover {
@@ -524,8 +527,8 @@ input:focus, textarea:focus {
 
 	nav li a {
 		letter-spacing: 1.5px;
-		font-size:16px; 
-		height: 30px;
+		font-size:1rem; 
+		height: 35px;
 		
 		-webkit-transition-duration: 0.2s;
 		transition-duration: 0.2s;
@@ -537,7 +540,7 @@ input:focus, textarea:focus {
 
 	.home-icon {
 		float: left;
-		margin: 15px 0 0 25px;
+		margin: 15px 0 0 30px;
 	}
 	
 }
@@ -545,11 +548,38 @@ input:focus, textarea:focus {
 
 
 
-@media only screen and (min-width: 1200px) {
-	
+@media only screen and (min-width: 1150px) {
+
+	html {font-size:18px;}
+	#intro-web-message {font-size:20px;}
+
+	#intro-web .icon-circle {
+		height:200px;
+		width:200px;
+	}
+
+	#intro-web .ghost {height:130px; margin-top:35px;}
+
+	.intro h2 {line-height:1.8rem;}
 }
 
 
+@media only screen and (min-width: 1500px) {
+	html {font-size:20px;}
+	#intro-web-message {font-size:24px;}
+	#intro-web-message h1 {line-height:4.8rem;}
+	.intro h2 {line-height:2rem;}
+
+	#intro-web .icon-circle {
+		height:230px;
+		width:230px;
+		margin-right:3rem;
+	}
+
+	#intro-web {width:36.5rem;}
+
+	#intro-web .ghost {height:150px; margin-top:40px;}
+}
 
 
 
@@ -597,7 +627,7 @@ nav li a {
 	font-family:'futura_ltregular';
 	padding: 22px 25px;
 	letter-spacing: 3px;
-	font-size: 14px;
+	font-size: .875rem;
 }
 nav li a.logo {
 	display: none;
