@@ -484,6 +484,31 @@ input:focus, textarea:focus {
 		transform: translate(0, -3px);
 
 	}
+
+
+	.info-container {
+		width:90%;
+		max-width:650px;
+		margin:0 auto;
+	}
+
+	.services .icon-circle {
+		margin: 6%;
+	}
+
+	.description {
+		display: inline-block;
+		max-width:50%;
+		vertical-align: middle;
+	}
+
+	.description p {
+		text-align:left;
+		margin:0;
+		width:auto;
+	}
+
+
 }
 
 
