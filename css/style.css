@@ -321,6 +321,7 @@ nav li a {
 	letter-spacing: 2px;
 	padding-bottom: 1.625rem;
 	font-family: 'futura_ltheavy';
+	-webkit-transition: all 0.5s;
 }
 
 
@@ -331,6 +332,7 @@ nav li a {
 	display: block;
 	margin: 0 auto;
 	padding-bottom: .3rem;
+	-webkit-transition: all 0.5s;
 }
 
 .skills {
@@ -500,6 +502,7 @@ input:focus, textarea:focus {
 		display: inline-block;
 		max-width:50%;
 		vertical-align: middle;
+		transition: all .5s;
 	}
 
 	.description p {
@@ -507,7 +510,6 @@ input:focus, textarea:focus {
 		margin:0;
 		width:auto;
 	}
-
 
 }
 
@@ -571,6 +573,16 @@ input:focus, textarea:focus {
 }
 
 
+@media only screen and (min-width: 1000px) {
+	
+	#intro-web {width:38.3rem;}
+	.icon-circle {margin-right: 3.4rem;}
+
+	#intro-web-message {font-size:21px;}
+	#intro-web-message h1 {line-height: 4.8rem;}
+
+
+}
 
 
 @media only screen and (min-width: 1150px) {
@@ -598,10 +610,10 @@ input:focus, textarea:focus {
 	#intro-web .icon-circle {
 		height:230px;
 		width:230px;
-		margin-right:3rem;
+		margin-right:4rem;
 	}
 
-	#intro-web {width:36.5rem;}
+	#intro-web {width:37.5rem;}
 
 	#intro-web .ghost {height:150px; margin-top:40px;}
 }
