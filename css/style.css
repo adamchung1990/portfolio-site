@@ -202,6 +202,8 @@ nav li a {
 	-webkit-animation-name: fadein;
 	animation-name: fadein;
 
+	transition: all .5;
+
 }
 
 
@@ -269,6 +271,8 @@ nav li a {
 	background-color: #52b3c2;
 }
 
+.info-container {transition:all .5s;}
+
 .services-icon {
 	height:190px;
 	display:block;
@@ -276,7 +280,7 @@ nav li a {
 	padding: 2rem 0;
 }
 
-.services .icon-circle {margin: 2rem auto 2rem;}
+.services .icon-circle {margin: 2rem auto 2rem; transition: all .5s;}
 
 #illustration {background-color: #f08f6a;}
 
@@ -314,7 +318,7 @@ nav li a {
 	animation-delay: 0.8s;
 }
 
-
+.description {transition: all 1s;}
 
 .section-title {
 	font-size: 1.25rem;
@@ -448,7 +452,7 @@ input:focus, textarea:focus {
 	#intro-mobile {display:none;}
 
 
-	.icon-circle {
+	.intro .icon-circle {
 		margin-right: 2.5rem;
 		display: inline-block;
 		vertical-align: middle;
@@ -479,25 +483,34 @@ input:focus, textarea:focus {
 
 	#intro-web-message h2 {
 		text-align:left;
+		line-height:1.9rem;
 	}
 
 	li a:hover {
-		-webkit-transform: translate(0, -3px);
-		transform: translate(0, -3px);
+		-webkit-transform: translate(0, -5px);
+		transform: translate(0, -5px);
 
 	}
 
 
 	.info-container {
-		width:90%;
-		max-width:650px;
+		width: 50%;
+		max-width: 428px;
 		margin:0 auto;
+		height: 210px;
 	}
+
 
 	.services .icon-circle {
-		margin: 6%;
+		transform: translate3d(-81%,20px,0);
+
 	}
 
+	.description {
+		transform: translate3d(49%,-188px,0);
+	}
+
+	/*
 	.description {
 		display: inline-block;
 		max-width:50%;
@@ -505,11 +518,15 @@ input:focus, textarea:focus {
 		transition: all .5s;
 	}
 
+	*/
+
 	.description p {
 		text-align:left;
 		margin:0;
-		width:auto;
 	}
+
+
+
 
 }
 
@@ -579,7 +596,7 @@ input:focus, textarea:focus {
 	.icon-circle {margin-right: 3.4rem;}
 
 	#intro-web-message {font-size:21px;}
-	#intro-web-message h1 {line-height: 4.8rem;}
+	#intro-web-message h1 {line-height: 5rem;}
 
 
 }
@@ -588,7 +605,6 @@ input:focus, textarea:focus {
 @media only screen and (min-width: 1150px) {
 
 	html {font-size:18px;}
-	#intro-web-message {font-size:20px;}
 
 	#intro-web .icon-circle {
 		height:200px;
