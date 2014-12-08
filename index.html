@@ -41,19 +41,18 @@
 
 <div class="container">
 
-<!-- MOBILE NAV -->
-
-
-
 
 <header class="rollover">
+
+	<img class="home-icon" src="img/home-icon.png" />
+	<p class="hidden">friendly <span id="highlight">ghost</span></p>
 	<div id="mobile-nav">
 	<ul class="burger">
 		<li></li><li></li><li></li>
 	</ul>
 	</div>
-	<p>friendly <span id="highlight">ghost</span></p>
-	<img class="home-icon" src="img/home-icon.png" />
+
+	
 </header>
 
 <div class="rollover-nav">
@@ -66,7 +65,10 @@
 </div>
 
 <!-- DESKTOP NAV -->
-<img class="home-icon" src="img/home-icon.png" />
+<div class="desktop-rollover">
+<img class="home-icon" id="desktop-home-icon" src="img/home-icon.png" />
+
+
 <nav>
 	<ul>
 		<li><a class="current" href="design.html">DESIGN</a></li>
@@ -74,7 +76,7 @@
 		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
 	</ul>
 </nav>
-
+</div>
 
 
 <!--INTRO -->
@@ -227,10 +229,14 @@
         $(window).scroll(function(){
             if ($(this).scrollTop() > 100) {
                 $('.rollover').addClass('active');
-                $('.rollover p').fadeIn();
+                $('.desktop-rollover').addClass('active up');
+                $('.rollover p').removeClass('hidden');
+
+
             } else {
             	$('.rollover').removeClass('active');
-            	$('.rollover p').hide();
+            	$('.desktop-rollover').removeClass('active up');
+            	$('.rollover p').addClass('hidden');
             }
         });
 

@@ -71,12 +71,6 @@ header {
 	left: 0;
 }
 
-.fixed-nav {
-	position: absolute;
-	height: 60px;
-	background-color: rgb(255, 187, 99);
-}
-
 .burger {
 	display: block;
 	height: 22px;
@@ -99,7 +93,7 @@ header {
 /* DESKTOP NAV */
 nav {
 	float: right;
-	margin: 25px 30px 0 0;
+	margin: 21px 30px 4px 0;
 	z-index:1;
 	display:none;
 }
@@ -118,16 +112,18 @@ nav li a {
 
 .home-icon {
 	height: 37px;
+	padding: 12px 19px 0 0;
 	position: absolute;
-	right: 0px;
 	top: 0px;
-	padding-top: 12px;
-	padding-right: 19px;
+	right:0px;
 }
 
+#desktop-home-icon {display:none;}
 
 
 /* ROLLOVER NAV */
+#fixed {box-shadow: none;}
+
 .rollover {
 	position: fixed;
 	z-index: 100;
@@ -148,8 +144,13 @@ nav li a {
 	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.21);
 }
 
-.rollover p {font-size: 23px; margin-top: 19px;display:none;}
+.rollover p {
+	font-size: 23px; 
+	margin-top: 20px;
+	display:block;
+}
 
+.hidden {opacity:0;}
 
 .rollover-nav {
 	position: fixed;
@@ -165,6 +166,7 @@ nav li a {
 	height: 60px;
 	width: 60px;
 	position: absolute;
+	top: 0px;
 }
 
 .open {
@@ -183,6 +185,10 @@ nav li a {
 	font-weight: 600;
 	letter-spacing: 4px;
 }
+
+
+.rollover-links li {display:none;}
+
 
 /* INTRO */
 
@@ -579,10 +585,26 @@ input:focus, textarea:focus {
 
 	.rollover {display:none;}
 
-	.home-icon {
+	#fixed {display:none;}
+
+	.rollover .home-icon {display:none;}
+
+	.desktop-rollover {
+		position:fixed;
+		width: 100%;
+		z-index: 100;
+		transition:.4s;
+	}
+
+	.up {
+		top:-18px;
+	}
+
+	#desktop-home-icon {
 		float: left;
 		margin: 19px 0 0 36px;
 		right:auto;
+		display:block;
 	}
 
 	nav {display:block;}
