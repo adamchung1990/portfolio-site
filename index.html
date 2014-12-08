@@ -29,7 +29,6 @@
 		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + 
 															"type='text/javascript'%3E%3C/script%3E"))
 </script>
-<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
@@ -42,197 +41,210 @@
 
 <div class="container">
 
-<!-- navigation -->
-
-	<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-
-		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-			<li></li><li></li><li></li>
-		</ul>
-		<img class="home-icon" src="img/home-icon.png" />
-
-	</header>
+<!-- MOBILE NAV -->
 
 
-		
-		<nav class="slide">
-			<ul>
-				<li><a class="current" href="design.html">DESIGN</a></li>
-				<li><a href="illustration.html">ILLUSTRATION</a></li>
-				<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
-			</ul>
-		</nav>
 
 
-<!--content -->
-
-	<div class="content slide">
-		<ul class="responsive">
-
-			<!--INTRO -->
-			<li class="intro-wrapper">
-			    <div class="intro" >
-
-			    	<div id="intro-mobile">
-		            	<h1>
-		            		<span>friendly</span><br/><span id="highlight">ghost</span><span> studio</span>
-
-		            	</h1>
-		            	<div class="icon-circle">
-			            	<img class="ghost" src="img/design.png" />
-			            	<div class="shadow"></div>
-		            	</div>
-		            	<h2>Boo! <span id="highlight">Hi, I’m </span>Adam Chung! <br/><span id="highlight">I’m an</span> illustrator <span id="highlight">and</span> designer.</h2>
-		            </div>
-
-		            <div id="intro-web">
-		            	<div class="icon-circle">
-			            	<img class="ghost" src="img/design.png" />
-			            	<div class="shadow"></div>
-		            	</div>
-		            	<div id="intro-web-message">
-			            	<h1 class="fadein"><span>friendly<br/></span><span id="highlight">ghost</span> <span>studio</span></h1>
-			            	<div class="line line-animate"></div>
-			            	<h2>Boo! <span id="highlight">Hi, I’m </span>Adam Chung! <br/><span id="highlight">I’m an</span> illustrator <span id="highlight">and</span> designer.</h2>
-		            	</div>
-		            </div>
-
-		            
-
-			    </div>
-
-			</li>
-
-
-			<!--SERVICES -->
-			<li class="services section">
-				<p class="title">services</p>
-				<div class="wow line-animate line"></div>
-
-				<div class="info-container">
-					<div class="wow fadein2 icon-circle" data-wow-offset="10" id="illustration">
-				        <img class="ghost" src="img/illustration.png" />
-				        <div class="shadow"></div>
-			        </div>
-			        <div class="wow fadein2 description">
-						<p class="section-title">ILLUSTRATION</p>
-						<p class="section-content">I have years of experience illustrating for various projects, ranging from books to magazines. I have a passion for quirky characters and expressions.</p>
-					</div>
-				</div>
-
-				<div class="info-container">
-					<div class="wow fadein2 icon-circle" id="design">
-				        <img class="ghost" src="img/design.png" />
-				        <div class="shadow"></div>
-			        </div>
-			        <div class="wow fadein2 description">
-						<p class="section-title">DESIGN</p>
-						<p class="section-content">I have experience designing for both print and web. For web, I have experience making responsive designs and UX design. </p>
-					</div>
-				</div>
-
-				<div class="info-container">
-					<div class="wow fadein2 icon-circle" id="development">
-				        <img class="ghost" src="img/development.png" />
-				        <div class="shadow"></div>
-			        </div>
-			        <div class="wow fadein2 description">
-						<p class="section-title">DEVELOPMENT</p>
-						<p class="section-content">I use the latest HTML, CSS, and Javascript techniques to make beautiful, responsive sites. </p>
-					</div>
-				</div>
-
-				<div class="skills">
-				<p class="section-title" id="skills-title">SKILLS</p>
-				<p class="section-content">Adobe Photoshop, Illustrator, HTML/CSS, Jquery, After Effects, InDesign</p>
-				</div>
-
-
-			</li>
-
-			<!--ABOUT -->
-			<li class="about section">
-				<p class="title">about</p>
-				<div class="wow line-animate line"></div>
-				<img class="services-icon" src="img/about-icon.png" />
-				<p class="section-title">Lorem ipsum dolor sit amet, consectetur</p>
-				<p class="section-content">adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ex</p>
-			</li>
-				
-
-			<li class="contact section" id="contact">
-				<p class="title">contact</p>
-				<div class="wow line-animate line"></div>
-
-				<div class="contact-wrapper">
-				<form method="post" action="contact.php">
-	
-				    <label>name</label>
-				    <input name="name">
-				            
-				    <label>phone number</label>
-				    <input name="phone">
-				            
-				    <label>message</label>
-				    <textarea name="message"></textarea>
-
-				    <label>e-mail</label>
-				    <input name="email" type="email">
-  
-				    <input id="submit" name="submit" type="submit" value="SUBMIT">
-						        
-				</form>
-				</div>
-
-				<div class="footer">
-				<p>designed and developed by Adam Chung</p>
-				</div>
-			</li>
-
-		</ul>
-
+<header class="rollover">
+	<div id="mobile-nav">
+	<ul class="burger">
+		<li></li><li></li><li></li>
+	</ul>
 	</div>
-	
-</div>
-
-
-
-<header class="slide rollover">
-	<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-			<li></li><li></li><li></li>
-		</ul>
-		<img class="home-icon" src="img/home-icon.png" />
+	<p>friendly <span id="highlight">ghost</span></p>
+	<img class="home-icon" src="img/home-icon.png" />
 </header>
 
+<div class="rollover-nav">
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="design.html">DESIGN</a></li>
+		<li><a href="illustration.html">ILLUSTRATION</a></li>
+		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
+	</ul>
+</div>
+
+<!-- DESKTOP NAV -->
+<img class="home-icon" src="img/home-icon.png" />
+<nav>
+	<ul>
+		<li><a class="current" href="design.html">DESIGN</a></li>
+		<li><a href="illustration.html">ILLUSTRATION</a></li>
+		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
+	</ul>
+</nav>
 
 
 
+<!--INTRO -->
+
+<section class="intro" >
+
+	<div id="intro-mobile">
+    	<h1>
+    		<span>friendly</span><br/><span id="highlight">ghost</span><span> studio</span>
+
+    	</h1>
+    	<div class="icon-circle">
+        	<img class="ghost" src="img/design.png" />
+        	<div class="shadow"></div>
+    	</div>
+    	<h2>Boo! <span id="highlight">Hi, I’m </span>Adam Chung! <br/><span id="highlight">I’m an</span> illustrator <span id="highlight">and</span> designer.</h2>
+    </div>
+
+    <div id="intro-web">
+    	<div class="icon-circle">
+        	<img class="ghost" src="img/design.png" />
+        	<div class="shadow"></div>
+    	</div>
+    	<div id="intro-web-message">
+        	<h1 class="fadein"><span>friendly<br/></span><span id="highlight">ghost</span> <span>studio</span></h1>
+        	<div class="line line-animate"></div>
+        	<h2>Boo! <span id="highlight">Hi, I’m </span>Adam Chung! <br/><span id="highlight">I’m an</span> illustrator <span id="highlight">and</span> designer.</h2>
+    	</div>
+    </div>
+
+</section>
+
+
+<!--SERVICES -->
+<section class="services section">
+	<p class="title">services</p>
+	<div class="wow line-animate line"></div>
+
+	<div class="info-container">
+		<div class="wow fadein2 icon-circle" data-wow-offset="10" id="illustration">
+	        <img class="ghost" src="img/illustration.png" />
+	        <div class="shadow"></div>
+        </div>
+        <div class="wow fadein2 description">
+			<p class="section-title">ILLUSTRATION</p>
+			<p class="section-content">I have years of experience illustrating for various projects, ranging from books to magazines. I have a passion for quirky characters and expressions.</p>
+		</div>
+	</div>
+
+	<div class="info-container">
+		<div class="wow fadein2 icon-circle" id="design">
+	        <img class="ghost" src="img/design.png" />
+	        <div class="shadow"></div>
+        </div>
+        <div class="wow fadein2 description">
+			<p class="section-title">DESIGN</p>
+			<p class="section-content">I have experience designing for both print and web. For web, I have experience making responsive designs and UX design. </p>
+		</div>
+	</div>
+
+	<div class="info-container">
+		<div class="wow fadein2 icon-circle" id="development">
+	        <img class="ghost" src="img/development.png" />
+	        <div class="shadow"></div>
+        </div>
+        <div class="wow fadein2 description">
+			<p class="section-title">DEVELOPMENT</p>
+			<p class="section-content">I use the latest HTML, CSS, and Javascript techniques to make beautiful, responsive sites. </p>
+		</div>
+	</div>
+
+	<div class="skills">
+	<p class="section-title" id="skills-title">SKILLS</p>
+	<p class="section-content">Adobe Photoshop, Illustrator, HTML/CSS, Jquery, After Effects, InDesign</p>
+	</div>
+
+
+</section>
+
+<!--ABOUT -->
+<section class="about section">
+	<p class="title">about</p>
+	<div class="wow line-animate line"></div>
+	<img class="services-icon" src="img/about-icon.png" />
+	<p class="section-title">Lorem ipsum dolor sit amet, consectetur</p>
+	<p class="section-content">adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ex</p>
+</section>
 	
-<!-- Smooth Scroll Javascript -->
-	
-	<script src='js/smooth-scroll.js'></script>
-	<script>
-		smoothScroll.init({
-			speed: 1000,
-			easing: 'easeInOutCubic',
-			offset: 0,
-			updateURL: true,
-			callbackBefore: function ( toggle, anchor ) {},
-			callbackAfter: function ( toggle, anchor ) {}
-		});
-	</script>
 
-	<script src="js/wow.min.js"></script>
-	<script>
-	 new WOW().init();
-	</script>
+<section class="contact section" id="contact">
+	<p class="title">contact</p>
+	<div class="wow line-animate line"></div>
 
-	<script type="text/javascript">
-	 
-	 	$(document).ready(function() {
-	 		$('.rollover').addClass('active');
-	 	});
-	</script>
+	<div class="contact-wrapper">
+	<form method="post" action="contact.php">
+
+	    <label>name</label>
+	    <input name="name">
+	            
+	    <label>phone number</label>
+	    <input name="phone">
+	            
+	    <label>message</label>
+	    <textarea name="message"></textarea>
+
+	    <label>e-mail</label>
+	    <input name="email" type="email">
+
+	    <input id="submit" name="submit" type="submit" value="SUBMIT">
+			        
+	</form>
+	</div>
+
+	<div class="footer">
+	<p>designed and developed by Adam Chung</p>
+	</div>
+</section>
+
+</div> <!--end container -->
+
+
+
+
+<!-- ANCHOR SCROLLING -->
+
+<script src='js/smooth-scroll.js'></script>
+<script>
+	smoothScroll.init({
+		speed: 1000,
+		easing: 'easeInOutCubic',
+		offset: 0,
+		updateURL: true,
+		callbackBefore: function ( toggle, anchor ) {},
+		callbackAfter: function ( toggle, anchor ) {}
+	});
+</script>
+
+
+<!-- ON SCROLL EFFECTS -->
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+
+<!-- CUSTOM JAVASCRIPT -->
+<script type="text/javascript">
+
+(function($) {
+    $(document).ready(function(){
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.rollover').addClass('active');
+                $('.rollover p').fadeIn();
+            } else {
+            	$('.rollover').removeClass('active');
+            	$('.rollover p').hide();
+            }
+        });
+
+
+    });
+})(jQuery);
+ 
+
+$('#mobile-nav').click(function(){
+ 	$('.rollover-nav').toggleClass('open');
+ 	$('.rollover').toggleClass('top-active');
+}); 
+
+</script>
 
 
 </body> 
