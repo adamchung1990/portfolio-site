@@ -129,6 +129,20 @@ nav li a {
 
 
 
+/* ROLLOVER NAV */
+.rollover {
+	position:fixed;
+	background-color:gray;
+	height:60px;
+	top:-100px;
+}
+
+.active {
+	top:0px;
+}
+
+
+
 /* INTRO */
 
 .intro {
@@ -571,7 +585,7 @@ input:focus, textarea:focus {
 
 	nav li a {
 		letter-spacing: 1.5px;
-		font-size:1rem; 
+		font-size:1.15rem; 
 		height: 35px;
 		
 		-webkit-transition-duration: 0.2s;
@@ -593,7 +607,7 @@ input:focus, textarea:focus {
 @media only screen and (min-width: 1000px) {
 	
 	#intro-web {width:38.3rem;}
-	.icon-circle {margin-right: 3.4rem;}
+	.intro .icon-circle {margin-right: 3.4rem;}
 
 	#intro-web-message {font-size:21px;}
 	#intro-web-message h1 {line-height: 5rem;}

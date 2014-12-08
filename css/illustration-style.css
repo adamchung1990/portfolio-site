@@ -1,0 +1,33 @@
+.illustration {
+	background-color: #466c87;
+	padding-top: 5rem;
+	height:100%;
+}
+
+.illustration a {
+	color:#7CDCEA;
+}
+
+.illustration .section-content {
+	max-width:375px;
+	line-height:1.4rem;
+}
+
+.illustration .icon-circle {
+	margin-top:2rem;
+	margin-bottom:2rem;
+}
+
+@media only screen and (min-width: 780px) {
+
+	.illustration {
+		padding-top: 9.5rem;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.illustration .section-content {
+		max-width:550px;
+	}
+
+}

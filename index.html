@@ -57,9 +57,9 @@
 		
 		<nav class="slide">
 			<ul>
-				<li><a class="current" href="#nav-background">DESIGN</a></li>
-				<li><a href="#">ILLUSTRATION</a></li>
-				<li><a href="#">CONTACT</a></li>
+				<li><a class="current" href="design.html">DESIGN</a></li>
+				<li><a href="illustration.html">ILLUSTRATION</a></li>
+				<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
 			</ul>
 		</nav>
 
@@ -160,7 +160,7 @@
 			</li>
 				
 
-			<li class="contact section">
+			<li class="contact section" id="contact">
 				<p class="title">contact</p>
 				<div class="wow line-animate line"></div>
 
@@ -197,7 +197,12 @@
 
 
 
-
+<header class="slide rollover">
+	<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<li></li><li></li><li></li>
+		</ul>
+		<img class="home-icon" src="img/home-icon.png" />
+</header>
 
 
 
@@ -223,11 +228,10 @@
 	</script>
 
 	<script type="text/javascript">
-	    $(document).ready(function(){
-	    	document.getElementById('activelink').focus();
-	    });
 	 
-	 
+	 	$(document).ready(function() {
+	 		$('.rollover').addClass('active');
+	 	});
 	</script>
 
 
