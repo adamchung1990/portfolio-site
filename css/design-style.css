@@ -1,7 +1,7 @@
 .banner {
 	background-color: white;
 	height: 6rem;
-	padding-top: 110px;
+	padding-top: 90px;
 }
 
 .banner .title {letter-spacing: -5px;}
@@ -17,7 +17,10 @@
 	padding:1rem 0;
 }
 
+.gallery ul {font-size:0;}
+
 .gallery li {
+	font-size:1rem;
 	background-color: white;
 	width:88%;
 	max-width:500px;
@@ -94,10 +97,21 @@
 
 
 @media only screen and (min-width: 780px) {
+	.banner {padding-top:120px;}
 
+	.gallery ul {width:96%;max-width:1200px;margin:0 auto;}
 
+	.gallery li {
+		display:inline-block;
+		width:45%;
+		margin:2.5%;
+	}
 }
 
 @media only screen and (min-width: 1000px) {
-
+	.gallery li {
+		display:inline-block;
+		width:30%;
+		margin:1.6666666667%;
+	}
 }

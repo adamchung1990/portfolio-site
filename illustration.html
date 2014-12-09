@@ -43,26 +43,43 @@
 
 <div class="container">
 
-<!-- navigation -->
+<header class="rollover active">
 
-	<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+	<img class="home-icon" src="img/home-icon.png" />
+	<p>friendly <span id="highlight">ghost</span></p>
+	<div id="mobile-nav">
+	<ul class="burger">
+		<li></li><li></li><li></li>
+	</ul>
+	</div>
 
-		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-			<li></li><li></li><li></li>
-		</ul>
-		<a href="index.html"><img class="home-icon" src="img/home-icon.png" /></a>
+	
+</header>
 
-	</header>
+<div class="rollover-nav">
+	<ul>
+		<li><a href="index.html">HOME</a></li>
+		<li><a href="design.html">DESIGN</a></li>
+		<li><a href="illustration.html">ILLUSTRATION</a></li>
+		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
+	</ul>
+</div>
 
+<!-- DESKTOP NAV -->
+<div class="desktop-rollover active up">
+<div class="nav-container">
+<img class="home-icon" id="desktop-home-icon" src="img/home-icon.png" />
+<p class="logo" style="display:block">friendly <span id="highlight">ghost</span></p>
 
-		
-		<nav class="slide">
-			<ul>
-				<li><a class="current" href="#nav-background">DESIGN</a></li>
-				<li><a href="#">ILLUSTRATION</a></li>
-				<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
-			</ul>
-		</nav>
+<nav>
+	<ul>
+		<li><a class="current" href="design.html">DESIGN</a></li>
+		<li><a href="illustration.html">ILLUSTRATION</a></li>
+		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
+	</ul>
+</nav>
+</div>
+</div>
 
 
 <!--content -->
