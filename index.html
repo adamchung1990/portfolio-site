@@ -66,8 +66,9 @@
 
 <!-- DESKTOP NAV -->
 <div class="desktop-rollover">
+<div class="nav-container">
 <img class="home-icon" id="desktop-home-icon" src="img/home-icon.png" />
-
+<p class="logo">friendly <span id="highlight">ghost</span></p>
 
 <nav>
 	<ul>
@@ -76,6 +77,7 @@
 		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
 	</ul>
 </nav>
+</div>
 </div>
 
 
@@ -231,12 +233,13 @@
                 $('.rollover').addClass('active');
                 $('.desktop-rollover').addClass('active up');
                 $('.rollover p').removeClass('hidden');
-
+                $('.logo').show();
 
             } else {
             	$('.rollover').removeClass('active');
             	$('.desktop-rollover').removeClass('active up');
             	$('.rollover p').addClass('hidden');
+            	$('.logo').hide();
             }
         });
 
