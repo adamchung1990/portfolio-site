@@ -39,42 +39,43 @@
  
 <body> 
 
-<div class="container">
+<div class="container" id="scroll-top">
 
 
 <header class="rollover">
+	<div class="rollover-container">
 
-	<img class="home-icon" src="img/home-icon.png" />
-	<p class="hidden">friendly <span id="highlight">ghost</span></p>
+	<a data-scroll data-options='{ "easing": "easeInQuad" }' href="#scroll-top"><img class="home-icon" src="img/home-icon.png" /></a>
+	<p class="hidden"><a style="color:white" data-scroll data-options='{ "easing": "easeInQuad" }' href="#scroll-top">friendly <span id="highlight">ghost</span></a></p>
 	<div id="mobile-nav">
 	<ul class="burger">
 		<li></li><li></li><li></li>
 	</ul>
 	</div>
 
-	
+	</div>
 </header>
 
 <div class="rollover-nav">
 	<ul>
-		<li><a href="index.html">HOME</a></li>
-		<li><a href="design.html">DESIGN</a></li>
-		<li><a href="illustration.html">ILLUSTRATION</a></li>
-		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
+		<li><a href="index.html">home</a></li>
+		<li><a href="design.html">design</a></li>
+		<li><a href="illustration.html">illustration</a></li>
+		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact-scroll">contact</a></li>
 	</ul>
 </div>
 
 <!-- DESKTOP NAV -->
 <div class="desktop-rollover">
 <div class="nav-container">
-<img class="home-icon" id="desktop-home-icon" src="img/home-icon.png" />
-<p class="logo">friendly <span id="highlight">ghost</span></p>
+<a data-scroll data-options='{ "easing": "easeInQuad" }' href="#scroll-top"><img class="home-icon" id="desktop-home-icon" src="img/home-icon.png" /></a>
+<p class="logo"><a style="color:white" data-scroll data-options='{ "easing": "easeInQuad" }' href="#scroll-top">friendly <span id="highlight">ghost</span></a></p>
 
 <nav>
 	<ul>
 		<li><a class="current" href="design.html">DESIGN</a></li>
 		<li><a href="illustration.html">ILLUSTRATION</a></li>
-		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact">CONTACT</a></li>
+		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact-scroll">CONTACT</a></li>
 	</ul>
 </nav>
 </div>
@@ -124,7 +125,7 @@
         </div>
         <div class="wow fadein2 description">
 			<p class="section-title">ILLUSTRATION</p>
-			<p class="section-content">I have years of experience illustrating for various projects, ranging from books to magazines. I have a passion for quirky characters and expressions.</p>
+			<p class="section-content">Got a sweet, spankin’ message but can’t find the image to match its sweetness? Well good sir (or ma’am), you are in the right place. I can illustrate anything from yodeling dogs to your grandma. Or maybe even…a ghost! Seriously, I really like drawing ghosts. I have no idea why. </p>
 		</div>
 	</div>
 
@@ -135,7 +136,7 @@
         </div>
         <div class="wow fadein2 description">
 			<p class="section-title">DESIGN</p>
-			<p class="section-content">I have experience designing for both print and web. For web, I have experience making responsive designs and UX design. </p>
+			<p class="section-content">So, you have an awesome product or service but it doesn’t quite have that “WOW” factor. Well, if I was born for just one purpose, it’s to make stuff look B-E-A-UTIFUL!  I hope your customers brought a change of clothes because their eyes are gonna piss tears. </p>
 		</div>
 	</div>
 
@@ -146,7 +147,7 @@
         </div>
         <div class="wow fadein2 description">
 			<p class="section-title">DEVELOPMENT</p>
-			<p class="section-content">I use the latest HTML, CSS, and Javascript techniques to make beautiful, responsive sites. </p>
+			<p class="section-content">Beep boop bee-oo wee-oo. That was computerese for I can code! I keep up to date with the latest HTML, CSS and Javascript so I can add cool knick-knacks, wip-waps, and… boy do I need a refresher on slang for hi-tech gadgetry. </p>
 		</div>
 	</div>
 
@@ -163,8 +164,9 @@
 	<p class="title">about</p>
 	<div class="wow line-animate line"></div>
 	<img class="services-icon" src="img/about-icon.png" />
-	<p class="section-title">Lorem ipsum dolor sit amet, consectetur</p>
-	<p class="section-content">adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ex</p>
+	<p class="section-title">Designer. Fellow human. Not a ghost.</p>
+	<p class="section-content">Hi, I'm Adam! I'm 24 years old. I majored in Art at Pomona College, which occasionally consisted of watching my classmates defecate, spit in each other’s mouths, drink menstrual blood and do other things of that ilk. After leaving the scary, bodily excrement-filled world of art in 2013, I started working as a graphic designer and have loved it ever since! I’ve done design work across a diverse range of media, including websites, magazines, albums, and books. You’re still thinking about the menstrual blood thing aren’t you?</p>
+	<div id="contact-scroll"></div>
 </section>
 	
 
@@ -233,13 +235,13 @@
                 $('.rollover').addClass('active');
                 $('.desktop-rollover').addClass('active up');
                 $('.rollover p').removeClass('hidden');
-                $('.logo').show();
+                $('.logo').fadeIn();
 
             } else {
             	$('.rollover').removeClass('active');
             	$('.desktop-rollover').removeClass('active up');
             	$('.rollover p').addClass('hidden');
-            	$('.logo').hide();
+            	$('.logo').fadeOut();
             }
         });
 
@@ -251,6 +253,11 @@
 $('#mobile-nav').click(function(){
  	$('.rollover-nav').toggleClass('open');
  	$('.rollover').toggleClass('top-active');
+ 	$('.burger').toggleClass('selected')
+}); 
+
+$('.rollover-nav a').click(function(){
+ 	$('.rollover-nav').removeClass('open')
 }); 
 
 </script>

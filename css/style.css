@@ -81,12 +81,32 @@ header {
 	left: 9px;
 }
 
+.burger:hover {
+	cursor:pointer;
+}
+
+.burger:active {
+	background-color: rgba(240, 165, 67, 1);
+	border-radius: 6px;
+}
+
+.burger:active li {
+	background-color: rgb(255, 229, 204);
+}
+
 .burger li {
 	width: 25px;
 	height: 4px;
 	background-color: white;
 	margin: 5px 0;
 }
+
+.selected {
+	background-color: rgba(249, 172, 73, 1);
+	border-radius: 6px;
+}
+
+.selected li {background-color: rgb(255, 241, 223);}
 
 
 
@@ -120,7 +140,7 @@ nav li a {
 
 #desktop-home-icon {display:none;}
 
-.logo {display:none;}
+.logo {display:none;font-size:0;}
 
 /* ROLLOVER NAV */
 #fixed {box-shadow: none;}
@@ -129,7 +149,6 @@ nav li a {
 	position: fixed;
 	z-index: 100;
 	height: 60px;
-	top: 0px;
 	transition: .4s;
 }
 
@@ -172,21 +191,38 @@ nav li a {
 
 .open {
 	top:0%;
-	padding-top: 102px;
+	padding-top: 73px;
 }
 
 .rollover-nav li {
+	border: 2px solid rgb(229, 229, 229);
+	border-radius: 10px;
+	width: 83%;
+	margin: 19px auto;
 	text-align:center;
-	font-size:2.3rem;
+	font-size:1.8rem;
 	margin-bottom:1rem;
+	text-transform: uppercase;
+	transition: .3s;
+}
+
+.rollover-nav li:hover {
+	background-color: rgb(255, 196, 120);
+	border-color: rgb(255, 196, 120);
+	cursor:pointer;
 }
 
 .rollover-nav li a {
-	color: rgb(182, 182, 182);
+	color: rgb(189, 189, 189);
 	font-weight: 600;
 	letter-spacing: 4px;
+	width: 90%;
+	display: block;
+	padding: 5%;
+	transition: .3s;
 }
 
+.rollover-nav li:hover a {color:white;}
 
 .rollover-links li {display:none;}
 
@@ -201,8 +237,6 @@ nav li a {
 .intro {
 	background-color: #ffbb63;
 	padding: .625rem 0 2.75rem 0;
-	transition: .4s;
-	transition-delay: .3s;
 }
 
 .intro .intro-icon-big {display: none;}
@@ -553,12 +587,6 @@ input:focus, textarea:focus {
 		line-height:1.9rem;
 	}
 
-	li a:hover {
-		-webkit-transform: translate(0, -5px);
-		transform: translate(0, -5px);
-
-	}
-
 
 	.info-container {
 		width: 50%;
@@ -589,6 +617,13 @@ input:focus, textarea:focus {
 
 @media only screen and (min-width: 780px) {
 
+	.rollover-nav {display:none;}
+
+	li a:hover {
+		-webkit-transform: translate(0, -5px);
+		transform: translate(0, -5px);
+	}
+
 	.rollover {display:none;}
 
 	#fixed {display:none;}
@@ -601,6 +636,7 @@ input:focus, textarea:focus {
 		height:83px;
 		z-index: 100;
 		transition:.4s;
+		top:6px;
 	}
 
 	.up {
@@ -662,7 +698,7 @@ input:focus, textarea:focus {
 	nav li a {
 		letter-spacing: 1.5px;
 		font-size:1.15rem; 
-		height: 35px;
+		height: 33px;
 		
 		-webkit-transition-duration: 0.2s;
 		transition-duration: 0.2s;
