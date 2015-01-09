@@ -1,3 +1,5 @@
+
+
 .banner {
 	background-color: white;
 	height: 6rem;
@@ -46,6 +48,8 @@
 	width:100%;
 	opacity:1;
 	transition: opacity .4s;
+	min-height:180px;
+	background-color: rgb(192, 192, 192);
 }
 
 .gallery li:hover {
@@ -69,6 +73,7 @@
 .portfolio {
 	background-color: rgb(250, 250, 250);
 	padding: 47px 0 67px;
+	min-height:100%;
 }
 
 .portfolio img {
@@ -104,6 +109,8 @@
 		width:45%;
 		margin:2.5%;
 	}
+
+	.gallery li img {min-height:225px;}
 }
 
 @media only screen and (min-width: 1000px) {
@@ -112,4 +119,6 @@
 		width:30%;
 		margin:1.6666666667%;
 	}
+
+	.gallery li img {min-height:194px;}
 }

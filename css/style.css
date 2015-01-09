@@ -422,21 +422,23 @@ nav li a {
 .description {transition: all 1s;}
 
 .section-title {
-	font-size: 1.25rem;
+	font-size: 20px;
 	letter-spacing: 2px;
-	padding-bottom: 1.625rem;
+	padding-bottom: 26px;
 	font-family: 'futura_ltheavy';
 	-webkit-transition: all 0.5s;
 }
 
 
 .section-content {
+	font-size:16px;
 	letter-spacing: 1px;
-	line-height: 19px;
+	line-height: 18px;
 	width: 86%;
+	max-width: 700px;
 	display: block;
 	margin: 0 auto;
-	padding-bottom: .3rem;
+	padding-bottom: 5px;
 	-webkit-transition: all 0.5s;
 }
 
@@ -444,6 +446,7 @@ nav li a {
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
 	width: 80%;
+	max-width: 800px;
 	display: block;
 	margin: 39px auto 7px;
 	padding: 24px 0px;
@@ -464,11 +467,18 @@ nav li a {
 	background-color: #ffbb63;
 }
 
+.about .section-title {
+	width:80%;
+	margin:0 auto;
+}
+
 /* CONTACT */
 
 .contact {
 	background-color: #f57467;
 }
+
+.contact .info {margin:20px auto;}
 
 .contact-wrapper {
 	width:90%;
@@ -518,7 +528,7 @@ input:focus, textarea:focus {
     border-radius:5px;
     background-color: transparent;
     border: 2px solid white;
-    padding-bottom:.625rem;
+    padding-bottom: 2rem;
     margin-top: 1.625rem;
 }
 
@@ -597,12 +607,12 @@ input:focus, textarea:focus {
 
 
 	.services .icon-circle {
-		transform: translate3d(-81%,20px,0);
+		-webkit-transform: translate3d(-81%,20px,0);
 
 	}
 
 	.description {
-		transform: translate3d(49%,-188px,0);
+		-webkit-transform: translate3d(49%,-194px,0);
 	}
 
 
@@ -712,7 +722,7 @@ input:focus, textarea:focus {
 
 @media only screen and (min-width: 1000px) {
 	
-	#intro-web {width:38.3rem;}
+	#intro-web {width:38.4rem;}
 	.intro .icon-circle {margin-right: 3.4rem;}
 
 	#intro-web-message {font-size:21px;}
