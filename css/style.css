@@ -206,7 +206,7 @@ nav li a {
 	transition: .3s;
 }
 
-.rollover-nav li:hover {
+.rollover-nav li:hover, .rollover-nav li:active{
 	background-color: rgb(255, 196, 120);
 	border-color: rgb(255, 196, 120);
 	cursor:pointer;
@@ -222,7 +222,7 @@ nav li a {
 	transition: .3s;
 }
 
-.rollover-nav li:hover a {color:white;}
+.rollover-nav li:hover a, .rollover-nav li:active a {color:white;}
 
 .rollover-links li {display:none;}
 
@@ -472,6 +472,27 @@ nav li a {
 	margin:0 auto;
 }
 
+.button {
+	font-family: 'futura_ltregular';
+	font-size: 22px;
+	color: rgb(255, 255, 255);
+	display: block;
+	margin: 0 auto;
+	border: 2px solid white;
+	background: none;
+	width: 238px;
+	border-radius: 10px;
+	margin-top: 22px;
+	text-align: center;
+	padding: 10px 0 15px;
+	transition-duration: .3s;
+    -webkit-ransition-duration: .3s;
+}
+
+#linkedin {padding:13px 0 12px;}
+
+.button:hover, .button:active {color:rgb(255, 168, 56);background-color:white;}
+
 /* CONTACT */
 
 .contact {
@@ -530,9 +551,11 @@ input:focus, textarea:focus {
     border: 2px solid white;
     padding-bottom: 2rem;
     margin-top: 1.625rem;
+    transition-duration: .3s;
+    -webkit-ransition-duration: .3s;
 }
 
-#submit:hover {
+#submit:hover, #submit:active {
 	background-color: white;
 	cursor:pointer;
 	color:#f57467;
@@ -674,6 +697,8 @@ input:focus, textarea:focus {
 		margin-left: 30px;
 		-webkit-animation-name: fadeindown;
 		animation-name: fadeindown;
+		-webkit-transition-duration: 0.2s;
+		transition-duration: 0.2s;
 	}
 
 	nav li:nth-of-type(1) {

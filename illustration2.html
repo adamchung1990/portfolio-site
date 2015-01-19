@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+<title>Adam Chung Design</title> 
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Style Sheets --> 
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" href="css/fonts/futurafont.css" type="text/css" charset="utf-8" />
+
+<!--  Adobe Typekit
+<script src="//use.typekit.net/xbo3amu.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+-->
+
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/design-style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css" />
+
+<link rel="stylesheet" href="css/animate.css">
+
+<!-- Scripts --> 
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + 
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+</head> 
+ 
+<body ontouchstart=""> 
+
+<div class="container">
+
+<header class="rollover active">
+
+	<a href="index.html"><img class="home-icon" src="img/home-icon.png" /></a>
+	<p><a style="color:white" href="index.html">friendly <span id="highlight">ghost</span></a></p>
+	<div id="mobile-nav">
+	<ul class="burger">
+		<li></li><li></li><li></li>
+	</ul>
+	</div>
+
+	
+</header>
+
+<div class="rollover-nav">
+	<ul>
+		<li><a href="index.html">home</a></li>
+		<li><a href="design.html">design</a></li>
+		<li><a href="illustration.html">illustration</a></li>
+		<li><a href="index.html#contact-scroll">contact</a></li>
+	</ul>
+</div>
+
+<!-- DESKTOP NAV -->
+<div class="desktop-rollover active up">
+<div class="nav-container">
+<a href="index.html"><img class="home-icon" id="desktop-home-icon" src="img/home-icon.png" /></a>
+<p class="logo" style="display:block"><a style="color:white" href="index.html">friendly <span id="highlight">ghost</span></a></p>
+
+<nav>
+	<ul>
+		<li><a class="current" href="design.html">DESIGN</a></li>
+		<li><a href="illustration.html">ILLUSTRATION</a></li>
+		<li><a href="index.html#contact-scroll">CONTACT</a></li>
+	</ul>
+</nav>
+</div>
+</div>
+
+
+
+<!--DESIGN -->
+<section class="banner">
+	<p class="title">
+		<span id="orange">i</span>
+		<span id="turquoise">l</span>
+		<span id="yellow">l</span>
+		<span id="red">u</span>
+		<span id="turquoise">s</span>
+		<span id="orange">t</span>
+		<span id="yellow">r</span>
+		<span id="red">a</span>
+		<span id="turquoise">t</span>
+		<span id="yellow">i</span>
+		<span id="red">o</span>
+		<span id="yellow">n</span>
+	</p>
+</section>
+<section class="illustration">
+	<ul>
+		<li>
+			<div class="preview image-link" href="img/illustrations/1.jpg">
+			</div>
+		</li>
+		<li>
+			<div class="preview">
+			</div>
+		</li>
+		<li>
+			<div class="preview">
+			</div>
+		</li>
+		<li>
+			<div class="preview">
+			</div>
+		</li>
+		<li>
+			<div class="preview">
+			</div>
+		</li>
+		<li>
+			<div class="preview">
+			</div>
+		</li>
+		<li>
+			<div class="preview">
+			</div>
+		</li>
+		<li>
+			<div class="preview">
+			</div>
+		</li>
+	</ul>
+</section>
+				
+	
+</div>
+
+
+
+
+	
+<!-- ON SCROLL EFFECTS -->
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+<!-- Magnific Popup core JS file -->
+<script src="js/magnific-popup.js"></script>
+
+<!-- CUSTOM JAVASCRIPT -->
+<script type="text/javascript">
+
+$('#mobile-nav').click(function(){
+ 	$('.rollover-nav').toggleClass('open');
+ 	$('.rollover').toggleClass('top-active');
+}); 
+
+$(document).ready(function() {
+  $('.image-link').magnificPopup({
+  	type:'image'
+  });
+});
+
+</script>
+
+
+</body> 
+</html>
+
+
+
+
+
+
+
