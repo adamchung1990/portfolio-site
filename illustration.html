@@ -20,7 +20,8 @@
 -->
 
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/illustration-style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/design-style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/magnific-popup.css" />
 
 <link rel="stylesheet" href="css/animate.css">
 
@@ -39,7 +40,7 @@
 
 </head> 
  
-<body> 
+<body ontouchstart=""> 
 
 <div class="container">
 
@@ -82,38 +83,79 @@
 </div>
 
 
-<!--content -->
 
-	<div class="content slide">
-		<ul class="responsive">
-
-			<!--ABOUT -->
-			<li class="illustration">
-				<p class="title">illustration</p>
-				<div class="wow line-animate line"></div>
-				<div class="wow fadein2 icon-circle" data-wow-offset="10" id="illustration">
-				        <img class="ghost" src="img/illustration.png" />
-				        <div class="shadow"></div>
-			    </div>
-				<p class="section-content">Whoa! Looks like I'm still working on this page but if you want to take a look at my illustrations, head on over to 
-				<br/>
-				<a target="_blank" href="http://adamchungportfolio.blogspot.com">adamchungportfolio.blogspot.com</a>
-				<br/> 
-				And you can always follow me on my tumblr! 
-				<br/>
-				<a target="_blank" href="http://adamchungart.tumblr.com">adamchungart.tumblr.com</a></p>
-			</li>
+<!--DESIGN -->
+<section class="banner">
+	<p class="title">
+		<span id="orange">i</span>
+		<span id="turquoise">l</span>
+		<span id="yellow">l</span>
+		<span id="red">u</span>
+		<span id="turquoise">s</span>
+		<span id="orange">t</span>
+		<span id="yellow">r</span>
+		<span id="red">a</span>
+		<span id="turquoise">t</span>
+		<span id="yellow">i</span>
+		<span id="red">o</span>
+		<span id="yellow">n</span>
+	</p>
+</section>
+<section class="illustration">
+	<ul>
+		<li>
+			<img src="img/illustrations/preview1.jpg" class="preview image-link" href="img/illustrations/1.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview2.jpg" class="preview image-link" href="img/illustrations/2.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview3.jpg" class="preview image-link" href="img/illustrations/3.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview4.jpg" class="preview image-link" href="img/illustrations/4.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview5.jpg" class="preview image-link" href="img/illustrations/5.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview7.jpg" class="preview image-link" href="img/illustrations/7.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview8.jpg" class="preview image-link" href="img/illustrations/8.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview9.jpg" class="preview image-link" href="img/illustrations/9.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview10.jpg" class="preview image-link" href="img/illustrations/10.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview11.jpg" class="preview image-link" href="img/illustrations/11.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview12.jpg" class="preview image-link" href="img/illustrations/12.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview13.jpg" class="preview image-link" href="img/illustrations/13.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview14.jpg" class="preview image-link" href="img/illustrations/14.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview15.jpg" class="preview image-link" href="img/illustrations/15.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview16.jpg" class="preview image-link" href="img/illustrations/16.jpg">
+		</li>
+		<li>
+			<img src="img/illustrations/preview17.jpg" class="preview image-link" href="img/illustrations/17.jpg">
+		</li>
+	</ul>
+</section>
 				
-
-		</ul>
-
-	</div>
 	
 </div>
-
-
-
-
 
 
 
@@ -123,16 +165,22 @@
 <script src="js/wow.min.js"></script>
 <script>new WOW().init();</script>
 
+<!-- Magnific Popup core JS file -->
+<script src="js/magnific-popup.js"></script>
 
 <!-- CUSTOM JAVASCRIPT -->
 <script type="text/javascript">
-
- 
 
 $('#mobile-nav').click(function(){
  	$('.rollover-nav').toggleClass('open');
  	$('.rollover').toggleClass('top-active');
 }); 
+
+$(document).ready(function() {
+  $('.image-link').magnificPopup({
+  	type:'image'
+  });
+});
 
 </script>
 

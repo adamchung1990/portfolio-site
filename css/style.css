@@ -253,30 +253,47 @@ nav li a {
 
 .intro h1 span:nth-of-type(1){
 	-webkit-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
 	animation-duration: 0.5s;
+
 	-webkit-animation-name: fadeindown;
+	-moz-animation-name: fadeindown;
 	animation-name: fadeindown;
 }
 
 .intro h1 span:nth-of-type(2) {
 	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
 	animation-delay: .2s;
+
 	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
 	animation-fill-mode: backwards;
+
 	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
 	animation-duration: .5s;
+
 	-webkit-animation-name: fadein;
+	-moz-animation-name: fadein;
 	animation-name: fadein;
 }
 
 .intro h1 span:nth-of-type(3) {
 	-webkit-animation-delay: .4s;
+	-moz-animation-delay: .4s;
 	animation-delay: .4s;
+
 	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
 	animation-fill-mode: backwards;
+
 	-webkit-animation-duration: .5s;
+	-moz-animation-duration: .5s;
 	animation-duration: .5s;
+
 	-webkit-animation-name: fadein;
+	-moz-animation-name: fadein;
 	animation-name: fadein;
 }
 
@@ -294,13 +311,19 @@ nav li a {
 	border:6px solid white;
 
 	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
 	animation-fill-mode: backwards;
+
 	-webkit-animation-delay: .6s;
+	-moz-animation-delay: .6s;
 	animation-delay: .6s;
 
 	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
 	animation-duration: 1s;
+
 	-webkit-animation-name: fadein;
+	-moz-animation-name: fadein;
 	animation-name: fadein;
 
 	transition: all .5;
@@ -318,6 +341,7 @@ nav li a {
 	margin-top:5px;
 
 	-webkit-animation:shadow 1s infinite;
+	-moz-animation:shadow 1s infinite;
 }
 
 
@@ -329,6 +353,7 @@ nav li a {
 	margin-top: 30px; 
   	position:relative;
   	-webkit-animation:bounce 1s infinite;
+  	-moz-animation:bounce 1s infinite;
 }
 
 #intro-web {
@@ -347,12 +372,19 @@ nav li a {
     margin-top: 2rem;
 
     -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
 	animation-fill-mode: backwards;
+
     -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
 	animation-duration: 1s;
+
 	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay: 0.3s;
 	animation-delay: 0.3s;
+
 	-webkit-animation-name: fadeinup;
+	-moz-animation-name: fadeinup;
 	animation-name: fadeinup;
 }
 
@@ -391,31 +423,37 @@ nav li a {
 
 #illustration .ghost {
 	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
 	animation-delay: 0.4s;
 }
 
 #illustration .shadow {
 	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
 	animation-delay: 0.4s;
 }
 
 #design .ghost {
 	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
 	animation-delay: 0.6s;
 }
 
 #design .shadow {
 	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
 	animation-delay: 0.6s;
 }
 
 #development .ghost {
 	-webkit-animation-delay: 0.8s;
+	-moz-animation-delay: 0.8s;
 	animation-delay: 0.8s;
 }
 
 #development .shadow {
 	-webkit-animation-delay: 0.8s;
+	-moz-animation-delay: 0.8s;
 	animation-delay: 0.8s;
 }
 
@@ -581,6 +619,12 @@ input:focus, textarea:focus {
 	text-align: right;
 }
 
+.php-test {color:blue;}
+
+@media only screen and (min-width:400px) {
+	.icon-circle {height:180px; width:180px;}
+}
+
 
 @media only screen and (min-width: 600px) {
 	#intro-mobile {display:none;}
@@ -631,11 +675,13 @@ input:focus, textarea:focus {
 
 	.services .icon-circle {
 		-webkit-transform: translate3d(-81%,20px,0);
+		-moz-transform: translate3d(-81%,20px,0);
 
 	}
 
 	.description {
 		-webkit-transform: translate3d(49%,-194px,0);
+		-moz-transform: translate3d(49%,-194px,0);
 	}
 
 
@@ -654,6 +700,7 @@ input:focus, textarea:focus {
 
 	li a:hover {
 		-webkit-transform: translate(0, -5px);
+		-moz-transform: translate(0, -5px);
 		transform: translate(0, -5px);
 	}
 
@@ -696,33 +743,49 @@ input:focus, textarea:focus {
 	nav li {
 		margin-left: 30px;
 		-webkit-animation-name: fadeindown;
+		-moz-animation-name: fadeindown;
 		animation-name: fadeindown;
+
 		-webkit-transition-duration: 0.2s;
+		-moz-transition-duration: 0.2s;
 		transition-duration: 0.2s;
 	}
 
 	nav li:nth-of-type(1) {
 		-webkit-animation-duration: 0.55s;
+		-moz-animation-duration: 0.55s;
 		animation-duration: 0.55s;
+
 		-webkit-animation-fill-mode: both;
+		-moz-animation-fill-mode: both;
 		animation-fill-mode: both;
 	}
 
 	nav li:nth-of-type(2) {
 		-webkit-animation-duration: 0.65s;
+		-moz-animation-duration: 0.65s;
 		animation-duration: 0.65s;
+
 		-webkit-animation-delay: .05s;
+		-moz-animation-delay: .05s;
 		animation-delay: .05s;
+
 		-webkit-animation-fill-mode: both;
+		-moz-animation-fill-mode: both;
 		animation-fill-mode: both;
 	}
 
 	nav li:nth-of-type(3) {
 		-webkit-animation-duration: 0.75s;
+		-moz-animation-duration: 0.75s;
 		animation-duration: 0.75s;
+
 		-webkit-animation-delay: .1s;
+		-moz-animation-delay: .1s;
 		animation-delay: .1s;
+
 		-webkit-animation-fill-mode: both;
+		-moz-animation-fill-mode: both;		
 		animation-fill-mode: both;
 	}
 
@@ -848,6 +911,18 @@ input:focus, textarea:focus {
   }
 }
 
+@-moz-keyframes fadeindown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, -60px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+  }
+}
+
 @keyframes fadeindown {
   0% {
     opacity: 0;
@@ -862,6 +937,18 @@ input:focus, textarea:focus {
 
 
 @-webkit-keyframes fadeinup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 50px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+  }
+}
+
+@-moz-keyframes fadeinup {
   0% {
     opacity: 0;
     -webkit-transform: translate(0, 50px);
@@ -894,9 +981,21 @@ input:focus, textarea:focus {
   100%     {width:73px;}
 }
 
+@-moz-keyframes shadow {
+  0%       {width:73px; }
+  60%      {width:55px; }
+  100%     {width:73px;}
+}
+
+
 @-webkit-keyframes bounce {
   0%       {bottom:0px; }
   60%      {bottom:10px; }
   100%     {bottom:0px;}
 }
 
+@-moz-keyframes bounce {
+  0%       {bottom:0px; }
+  60%      {bottom:10px; }
+  100%     {bottom:0px;}
+}
