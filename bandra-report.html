@@ -10,18 +10,38 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+<!--LinoType Futura font -->
+<style type="text/css">
+@font-face{
+font-family:"Futura W01 Medium";
+src:url("Fonts/774845/f0052336-792e-4fcf-8750-fe6d7d5dccba.eot?#iefix");
+src:url("Fonts/774845/f0052336-792e-4fcf-8750-fe6d7d5dccba.eot?#iefix") format("eot"),url("Fonts/774845/1b696b29-a6bd-4411-a50f-37fd8a209b36.woff") format("woff"),url("Fonts/774845/a3931c31-5998-4dbd-b7d5-d310e4ed3d60.ttf") format("truetype"),url("Fonts/774845/6779412d-2ea7-4f1a-acfd-f6a527baaee7.svg#6779412d-2ea7-4f1a-acfd-f6a527baaee7") format("svg");
+}
+
+</style>
+<script type="text/javascript">
+var MTUserId='dcadf0a4-04d3-4d5d-b443-4c856d45ff54';
+var MTFontIds = new Array();
+
+MTFontIds.push("774845"); // Futura® W01 Medium 
+(function() {
+var mtTracking = document.createElement('script');
+mtTracking.type='text/javascript';
+mtTracking.async='true';
+mtTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.fonts.net/lt/trackingCode.js';
+
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
+})();
+</script>
+
+
+<!-- favicon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
 <!-- Style Sheets --> 
 <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-<link rel="stylesheet" href="css/fonts/futurafont.css" type="text/css" charset="utf-8" />
-
-<!--  Adobe Typekit
-<script src="//use.typekit.net/xbo3amu.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
--->
-
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 <link rel="stylesheet" type="text/css" media="all" href="css/design-style.css" />
-
 <link rel="stylesheet" href="css/animate.css">
 
 <!-- Scripts --> 
@@ -30,7 +50,6 @@
 		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + 
 															"type='text/javascript'%3E%3C/script%3E"))
 </script>
-<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
 <!--[if lt IE 9]>
 <script src="js/html5shiv.js"></script>
@@ -39,7 +58,7 @@
 
 </head> 
  
-<body> 
+<body ontouchstart=""> 
 
 <div class="container">
 

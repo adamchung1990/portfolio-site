@@ -1,9 +1,17 @@
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
+*/
+
+
 html, body {margin:0;padding:0;height:100%;}
 
 body {
 	background-color: black;
 	
-	font-family: 'futura_ltregular', Arial, Helvetica, Geneva, sans-serif;
+	font-family: 'Futura W01 Medium', Helvetica, sans-serif;
 	color: #9aa6af;
 	text-rendering: optimizelegibility;
 
@@ -123,7 +131,7 @@ nav li {
 	display: inline-block;
 }
 nav li a {
-	font-family:'futura_ltregular', sans-serif;
+	font-family: 'Futura W01 Medium', sans-serif;
 	font-weight: 700;
 	font-size: 1.125rem;
 	color: white;
@@ -463,7 +471,9 @@ nav li a {
 	font-size: 20px;
 	letter-spacing: 2px;
 	padding-bottom: 26px;
-	font-family: 'futura_ltheavy';
+	font-family: 'Futura W01 Medium', sans-serif;
+	font-style: normal;
+	font-weight: 700;
 	-webkit-transition: all 0.5s;
 }
 
@@ -471,7 +481,7 @@ nav li a {
 .section-content {
 	font-size:16px;
 	letter-spacing: 1px;
-	line-height: 18px;
+	line-height: 20px;
 	width: 86%;
 	max-width: 700px;
 	display: block;
@@ -511,7 +521,7 @@ nav li a {
 }
 
 .button {
-	font-family: 'futura_ltregular';
+	font-family: 'Futura W01 Medium';
 	font-size: 22px;
 	color: rgb(255, 255, 255);
 	display: block;
@@ -575,7 +585,9 @@ input:focus, textarea:focus {
 }
 
 #submit {
-	font-family:'futura_ltheavy';
+	font-family: 'Futura W01 Medium',sans-serif;
+	font-style: normal;
+	font-weight: 700;
 	font-size:1rem;
 	color:white;
 	height:49px;

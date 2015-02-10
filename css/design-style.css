@@ -59,8 +59,6 @@ html {
 
 }
 
-.gallery li:active {background-color: rgb(255, 140, 81);}
-
 .gallery li:hover p{
 	color:white;
 }
@@ -82,6 +80,7 @@ html {
 	background-color: rgb(182, 182, 182);
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.13);
 	width: 95%;
+	max-width:300px;
 	transition:opacity .3s;
 }
 
@@ -150,7 +149,7 @@ html {
 }
 
 @media only screen and (min-width: 600px) {
-	.project-description {max-width:590px;}
+	.project-description {max-width:650px;}
 }
 
 
