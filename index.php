@@ -78,7 +78,7 @@ mtTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.f
 
 <div class="rollover-nav">
 	<ul>
-		<li><a href="index.html">home</a></li>
+		<li><a href="index.php">home</a></li>
 		<li><a href="design.html">design</a></li>
 		<li><a href="illustration.html">illustration</a></li>
 		<li><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#contact-scroll">contact</a></li>
@@ -197,19 +197,23 @@ mtTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.f
 	<div class="wow line-animate line"></div>
 
 	<div class="contact-wrapper">
-	<form method="post" action="contact.php">
+	<form method="post" action="mailer.php">
 
-	    <label>name</label>
-	    <input name="name">
+	    <label>name*</label>
+	    <input type="text" name="name" required>
 	            
 	    <label>phone number</label>
-	    <input name="phone">
+	    <input type="tel" name="phone">
 	            
-	    <label>message</label>
-	    <textarea name="message"></textarea>
+	    <label>message*</label>
+	    <textarea rows="10" name="message" required></textarea>
 
-	    <label>e-mail</label>
-	    <input name="email" type="email">
+	    <label>e-mail*</label>
+	    <input type="email" name="email" type="email" required>
+
+	    <label>type in the code below to verify you're human*</label>
+	    <input type="text" name="verify" class="verif_box" required>
+	    <img style="margin-top:15px" class="verif_img" src="verificationimage.php?<?php echo rand(0,9999);?>" alt="verification image">
 
 	    <input id="submit" name="submit" type="submit" value="SUBMIT" ontouchstart="">
 			        
