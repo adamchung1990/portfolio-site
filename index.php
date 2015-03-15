@@ -221,7 +221,7 @@ mtTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.f
 	</div>
 
 	<p class="info">phone: 248.835.2015</p>
-	<p class="info">e-mail: adamchung1990@gmail.com</p>
+	<p class="info">e-mail: adamwchung@gmail.com</p>
 
 	<div class="footer">
 	<p>designed and developed by Adam Chung</p>

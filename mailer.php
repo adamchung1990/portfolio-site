@@ -7,7 +7,7 @@
     ###################################
 
 	// Set email address to send to i.e: you@yoursite.com
-	$sendTo		=	'adamchung1990@gmail.com';
+	$sendTo		=	'adamwchung@gmail.com';
 
 	// Set email subject (appears as subject)
 	$subject 	= 	'Adam Chung Portfolio - Contact Form Submission';
