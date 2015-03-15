@@ -9,8 +9,8 @@ Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
 html, body {margin:0;padding:0;height:100%;}
 
 body {
-	background-color: black;
-	
+
+	background-color:#FFBB64;
 	font-family: 'Futura W01 Medium', Helvetica, sans-serif;
 	color: #9aa6af;
 	text-rendering: optimizelegibility;
