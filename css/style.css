@@ -467,6 +467,17 @@ nav li a {
 
 .description {transition: all 1s;}
 
+#portfolio-link {
+  	font-size: 18px;
+  	font-family: 'open sans';
+  	font-weight: 600;
+  	width:250px;
+  	padding:12px 0 17px;
+  	margin-bottom: 35px;
+}
+
+#portfolio-link:hover {color:rgb(82, 179, 194);}
+
 .section-title {
 	font-size: 20px;
 	letter-spacing: 2px;
@@ -483,7 +494,7 @@ nav li a {
 	letter-spacing: 1px;
 	line-height: 20px;
 	width: 86%;
-	max-width: 700px;
+	max-width: 500px;
 	display: block;
 	margin: 0 auto;
 	padding-bottom: 5px;
@@ -677,17 +688,23 @@ input:focus, textarea:focus {
 	}
 
 
+}
+
+@media only screen and (min-width:700px) {
+
+	.services .icon-circle {margin-top:1.2rem;}
+
 	.info-container {
 		width: 50%;
 		max-width: 428px;
 		margin:0 auto;
-		height: 210px;
+		height: 280px;
 	}
 
 
 	.services .icon-circle {
-		-webkit-transform: translate3d(-81%,20px,0);
-		-moz-transform: translate3d(-81%,20px,0);
+		-webkit-transform: translate3d(-81%,46px,0);
+		-moz-transform: translate3d(-81%,46px,0);
 
 	}
 
@@ -702,11 +719,18 @@ input:focus, textarea:focus {
 		margin:0;
 	}
 
+	#portfolio-link {
+		margin: 14px 0 5px 0;
+  		width: 144px;
+  		font-size: 17px;
+	}
 }
 
 
 
 @media only screen and (min-width: 780px) {
+
+	.info-container {height: 260px;}
 
 	.rollover-nav {display:none;}
 

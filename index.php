@@ -146,6 +146,7 @@ mtTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.f
         <div class="wow fadein2 description">
 			<p class="section-title">ILLUSTRATION</p>
 			<p class="section-content">Sometimes, photos just don’t cut it. Nothing beats a good ol’ illustration using just your hands and your noggin. I’ll illustrate anything from yodeling dogs to your grandma. Or maybe even…a ghost! Seriously, I really like drawing ghosts. </p>
+			<a href="illustration.html" class="button" id="portfolio-link">view work</a>
 		</div>
 	</div>
 
@@ -157,6 +158,7 @@ mtTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.f
         <div class="wow fadein2 description">
 			<p class="section-title">DESIGN</p>
 			<p class="section-content">So, you have an awesome product but it doesn’t quite have that “WOW” factor. Well, if I was born for just one purpose, it’s to make stuff look B-E-A-UTIFUL!  Apps, websites, magazines, menus- you name it! I’ll make it look good.</p>
+			<a href="design.html" class="button" id="portfolio-link">view work</a>
 		</div>
 	</div>
 
@@ -167,7 +169,8 @@ mtTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.f
         </div>
         <div class="wow fadein2 description">
 			<p class="section-title">DEVELOPMENT</p>
-			<p class="section-content">Beep boop bee-oo bee-oo. That was computerese for “I know HTML, CSS and Javascript”!  I have experience coding responsive websites and I meticulously test for cross-browser functionality.  </p>
+			<p class="section-content">Beep boop bee-oo bee-oo. That was computerese for “I know HTML, CSS and Javascript”!  I have experience coding responsive websites and I meticulously test for cross-browser functionality.</p>
+			<a href="design.html" class="button" id="portfolio-link">view work</a>
 		</div>
 	</div>
 
